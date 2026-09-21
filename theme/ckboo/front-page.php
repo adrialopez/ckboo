@@ -174,10 +174,13 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
       <?php if ( $form_id && shortcode_exists( 'contact-form-7' ) ) : ?>
         <?php echo do_shortcode( '[contact-form-7 id="' . $form_id . '" title="Reserva"]' ); ?>
       <?php else : ?>
-        <p style="text-align:center;"><a href="mailto:hola@adria-lopez.com?subject=Contrataci%C3%B3n%20CkBoo" class="btn-dj">Escríbeme por email <?php echo $arrow; ?></a></p>
+        <p style="text-align:center;"><a href="mailto:dj@ckboo.es?subject=Contrataci%C3%B3n%20CkBoo" class="btn-dj">Escríbeme por email <?php echo $arrow; ?></a></p>
       <?php endif; ?>
     </div>
-    <p class="fade-up" style="font-size:0.7rem;color:var(--gray);margin-top:1.5rem;line-height:1.6;">
+    <p class="fade-up" style="color:var(--gray);margin-top:1.5rem;font-size:0.9rem;">
+      ¿Prefieres escribirme directamente? <a href="mailto:dj@ckboo.es" style="color:var(--yellow);text-decoration:underline;">dj@ckboo.es</a>
+    </p>
+    <p class="fade-up" style="font-size:0.7rem;color:var(--gray);margin-top:1rem;line-height:1.6;">
       Este sitio está protegido por reCAPTCHA. Se aplican la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--gray);text-decoration:underline;">Política de Privacidad</a> y los <a href="https://policies.google.com/terms" target="_blank" rel="noopener" style="color:var(--gray);text-decoration:underline;">Términos de Servicio</a> de Google.
     </p>
   </div>

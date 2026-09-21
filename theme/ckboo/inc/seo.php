@@ -72,6 +72,7 @@ add_action( 'wp_head', function () {
                     [ '@type' => 'City',  'name' => 'Barcelona' ],
                     [ '@type' => 'State', 'name' => 'Catalunya' ],
                 ],
+                'email'         => 'dj@ckboo.es',
                 'sameAs'        => [ CKBOO_MIXCLOUD_URL, CKBOO_INSTAGRAM_URL ],
             ],
         ],
@@ -80,3 +81,18 @@ add_action( 'wp_head', function () {
     echo '<script type="application/ld+json">' . wp_json_encode( $graph, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>' . "\n";
     echo "<!-- /CkBoo SEO -->\n";
 }, 5 );
+
+// Legal pages are noindex: keep them out of the XML sitemap too.
+add_filter( 'wp_sitemaps_posts_query_args', function ( $args, $post_type ) {
+    if ( 'page' === $post_type ) {
+        $exclude = [];
+        foreach ( [ 'politica-privacidad', 'politica-cookies' ] as $slug ) {
+            $page = get_page_by_path( $slug );
+            if ( $page ) {
+                $exclude[] = $page->ID;
+            }
+        }
+        $args['post__not_in'] = array_merge( isset( $args['post__not_in'] ) ? (array) $args['post__not_in'] : [], $exclude );
+    }
+    return $args;
+}, 10, 2 );
