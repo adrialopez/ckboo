@@ -1,0 +1,687 @@
+/* ============================================
+   CK BOO DJ PAGE — Styles
+   (extends style.css, imports it first)
+   ============================================ */
+
+/* DJ-specific overrides */
+:root {
+  --dj-accent: #e1b928;
+  --dj-bg: #080808;
+  --dj-dark: #0f0f0f;
+  --dj-glow: rgba(225, 185, 40, 0.25);
+}
+
+body.dj-mode {
+  background: var(--dj-bg);
+}
+
+/* ============================================
+   DJ HEADER
+   ============================================ */
+.dj-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background var(--transition);
+}
+
+.dj-header.scrolled {
+  background: rgba(8, 8, 8, 0.95);
+  border-bottom: 1px solid rgba(225, 185, 40, 0.12);
+}
+
+.dj-logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  text-shadow: 0 0 30px rgba(225, 185, 40, 0.4);
+}
+
+.dj-logo .boo,
+.ckboo-wordmark .boo { color: var(--yellow); }
+
+.dj-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.dj-nav a {
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  color: var(--gray-light);
+  transition: color var(--transition);
+}
+
+.dj-nav a:hover { color: var(--yellow); }
+
+/* ============================================
+   DJ HERO
+   ============================================ */
+.dj-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 2rem 4rem;
+}
+
+/* Full-bleed photo background */
+.dj-hero-photo {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image:
+    linear-gradient(180deg, rgba(8,8,8,0.55) 0%, rgba(8,8,8,0.75) 55%, rgba(8,8,8,0.96) 100%),
+    url('../img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center 30%;
+}
+
+/* Subtle glow (static, no blur/animation — kept light for older mobile browsers) */
+.dj-hero-bg {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 40%, rgba(225, 185, 40, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.dj-hero-image {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 2.5rem;
+  border: 3px solid rgba(225, 185, 40, 0.5);
+  box-shadow: 0 0 50px rgba(225, 185, 40, 0.25), 0 0 100px rgba(225, 185, 40, 0.1), 0 20px 60px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 1;
+}
+
+.dj-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(10%);
+}
+
+.dj-hero-tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dj-hero-tag::before,
+.dj-hero-tag::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--yellow);
+  opacity: 0.5;
+}
+
+.dj-hero h1 {
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0.5rem;
+}
+
+.dj-hero h1 .boo { color: var(--yellow); }
+
+.dj-hero h1 .dj-prefix {
+  font-size: 0.42em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--yellow);
+  vertical-align: 0.24em;
+  margin-right: 0.08em;
+}
+
+.dj-hero-sub {
+  font-size: 1.0625rem;
+  color: var(--gray);
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+  max-width: 480px;
+}
+
+.dj-hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-dj {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--yellow);
+  color: var(--black);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  padding: 0.875rem 2rem;
+  border-radius: 4px;
+  transition: all var(--transition);
+}
+
+.btn-dj:hover {
+  background: var(--yellow-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(225, 185, 40, 0.4);
+}
+
+.btn-dj-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--yellow);
+  font-weight: 500;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  padding: 0.875rem 2rem;
+  border: 1px solid rgba(225, 185, 40, 0.4);
+  border-radius: 4px;
+  transition: all var(--transition);
+}
+
+.btn-dj-outline:hover {
+  border-color: var(--yellow);
+  background: rgba(225, 185, 40, 0.08);
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   MUSIC PLAYER
+   ============================================ */
+.dj-player {
+  background: var(--dj-dark);
+  border-top: 1px solid rgba(225, 185, 40, 0.1);
+  border-bottom: 1px solid rgba(225, 185, 40, 0.1);
+  padding: 80px 0;
+}
+
+.mixcloud-embed {
+  margin-top: 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.mixcloud-embed iframe {
+  width: 100%;
+  display: block;
+}
+
+/* ============================================
+   MIXES GRID
+   ============================================ */
+.dj-mixes {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.dj-mixes::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-image:
+    linear-gradient(180deg, rgba(8,8,8,0.88) 0%, rgba(8,8,8,0.94) 100%),
+    url('../img/mixes-bg.jpg');
+  background-size: cover;
+  background-position: center 35%;
+}
+
+.dj-mixes .container {
+  position: relative;
+  z-index: 1;
+}
+
+.mixes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 3rem;
+}
+
+.mix-card {
+  background: var(--dark-2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all var(--transition);
+  position: relative;
+}
+
+.mix-card:hover {
+  border-color: rgba(225, 185, 40, 0.25);
+  transform: translateY(-4px);
+}
+
+.mix-card-thumb {
+  aspect-ratio: 16/9;
+  background: var(--dark-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.mix-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+.mix-card:hover .mix-card-thumb img {
+  transform: scale(1.05);
+}
+
+.mix-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.mix-card:hover .mix-play { opacity: 1; }
+
+.mix-play-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+}
+
+.mix-card-body {
+  padding: 1.25rem;
+}
+
+.mix-card-body h3 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.mix-card-meta {
+  font-size: 0.8125rem;
+  color: var(--gray);
+}
+
+/* ============================================
+   DJ BIO
+   ============================================ */
+.dj-bio {
+  background: var(--dj-dark);
+  border-top: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  padding: 80px 0;
+}
+
+.dj-bio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.dj-bio-image {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.dj-bio-image img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  filter: grayscale(20%);
+}
+
+/* Photo slider */
+.dj-bio-slider {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06);
+}
+
+.dj-bio-slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.dj-bio-slides::-webkit-scrollbar { display: none; }
+
+.dj-bio-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+.dj-bio-slide::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 45%;
+  background: linear-gradient(180deg, transparent 0%, rgba(8,8,8,0.75) 100%);
+  pointer-events: none;
+}
+
+.dj-bio-slide img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  object-position: center 12%;
+  display: block;
+  filter: grayscale(15%);
+  transition: transform 8s ease;
+}
+
+.dj-bio-slide-caption {
+  position: absolute;
+  left: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 1;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+}
+
+.dj-bio-slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(8,8,8,0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.25s ease, background 0.2s ease;
+}
+
+.dj-bio-slider:hover .dj-bio-slider-arrow { opacity: 1; }
+
+.dj-bio-slider-arrow:hover { background: rgba(225, 185, 40, 0.85); color: #000; }
+.dj-bio-slider-arrow.prev { left: 0.75rem; }
+.dj-bio-slider-arrow.next { right: 0.75rem; }
+
+.dj-bio-slider-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.25rem;
+  z-index: 1;
+  display: flex;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.dj-bio-slider-dots button {
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.4);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dj-bio-slider-dots button.active {
+  width: 20px;
+  background: var(--yellow);
+}
+
+@media (max-width: 600px) {
+  .dj-bio-slider-arrow { opacity: 1; width: 32px; height: 32px; }
+}
+
+.dj-bio-text h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1.5rem;
+}
+
+.dj-bio-text h2 em {
+  color: var(--yellow);
+  font-style: italic;
+}
+
+.dj-bio-text p {
+  color: var(--gray-light);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.dj-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.genre-tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  border: 1px solid rgba(225, 185, 40, 0.3);
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+/* ============================================
+   DJ FOOTER
+   ============================================ */
+.dj-footer {
+  padding: 3rem 2rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.dj-footer-left {
+  font-size: 0.875rem;
+  color: var(--gray);
+}
+
+.dj-footer-left strong { color: var(--white); }
+
+.dj-footer-social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.dj-footer-social a {
+  color: var(--gray);
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  transition: color var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dj-footer-social a:hover { color: var(--yellow); }
+
+/* ============================================
+   MOBILE NAV (shared class from style.css)
+   ============================================ */
+@media (max-width: 600px) {
+  .dj-nav { display: none; }
+
+  /* Full-page overlay menu (keyframes from style.css) */
+  .dj-nav.mobile-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: rgba(8, 8, 8, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    animation: overlayFadeIn 0.25s ease forwards;
+  }
+
+  .dj-nav.mobile-open ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    list-style: none;
+  }
+
+  .dj-nav.mobile-open a {
+    font-size: 1.75rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    display: block;
+    text-align: center;
+    opacity: 0;
+    animation: menuLinkIn 0.45s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    transition: color var(--transition);
+  }
+
+  .dj-nav.mobile-open a:hover { color: var(--dj-accent); }
+
+  .dj-hero h1 { font-size: 5rem; }
+  .dj-bio-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .dj-bio-image,
+  .dj-bio-slider { order: -1; }
+}
+
+@media (max-width: 900px) {
+  .dj-bio-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .dj-hero-image { width: 200px; height: 200px; }
+}
+
+/* ============================================
+   INSTAGRAM SECTION
+   ============================================ */
+.dj-instagram { padding: 80px 0; background: var(--dj-dark); border-top: 1px solid rgba(255,255,255,0.04); }
+.ig-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2.5rem; }
+.ig-profile { display: flex; align-items: center; gap: 1.25rem; }
+.ig-avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; object-position: center top; border: 2px solid rgba(225,185,40,0.3); }
+.ig-handle { font-size: 1.125rem; font-weight: 700; color: var(--white); }
+.ig-desc { font-size: 0.875rem; color: var(--gray); margin-top: 0.2rem; }
+.ig-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.ig-footer { text-align: center; margin-top: 2.5rem; }
+@media (max-width: 600px) {
+  .ig-grid { gap: 3px; }
+  .ig-header { flex-direction: column; align-items: flex-start; }
+}
+
+/* ============================================
+   BOOKING FORM (Contact Form 7)
+   ============================================ */
+.dj-booking-form .wpcf7-form { display: flex; flex-direction: column; gap: 1.25rem; }
+.dj-booking-form .wpcf7-form p { margin: 0; display: flex; flex-direction: column; gap: 0.4rem; }
+.dj-booking-form .wpcf7-form input[type="text"],
+.dj-booking-form .wpcf7-form input[type="email"],
+.dj-booking-form .wpcf7-form input[type="tel"],
+.dj-booking-form .wpcf7-form input[type="date"],
+.dj-booking-form .wpcf7-form select,
+.dj-booking-form .wpcf7-form textarea {
+  width: 100%; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px; padding: 0.75rem 1rem; color: var(--white); font-family: var(--font-body);
+  font-size: 0.9375rem; transition: border-color 0.2s; box-sizing: border-box;
+}
+.dj-booking-form .wpcf7-form input:focus,
+.dj-booking-form .wpcf7-form select:focus,
+.dj-booking-form .wpcf7-form textarea:focus { outline: none; border-color: var(--yellow); }
+.dj-booking-form .wpcf7-form textarea { min-height: 120px; resize: vertical; }
+.dj-booking-form .wpcf7-form select { appearance: none; }
+.dj-booking-form .wpcf7-form input[type="submit"] {
+  align-self: center; background: var(--yellow); color: #000; font-family: var(--font-body);
+  font-size: 0.875rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+  padding: 0.85rem 2rem; border: none; border-radius: 4px; cursor: pointer; transition: opacity 0.2s;
+}
+.dj-booking-form .wpcf7-form input[type="submit"]:hover { opacity: 0.85; }
+.dj-booking-form .wpcf7-not-valid-tip { font-size: 0.75rem; color: #e87070; margin-top: 0.2rem; }
+.dj-booking-form .wpcf7-acceptance label { display: flex; align-items: flex-start; gap: 0.6rem; font-size: 0.8rem; color: var(--gray); cursor: pointer; line-height: 1.5; }
+.dj-booking-form .wpcf7-acceptance input[type="checkbox"] { width: 16px; height: 16px; margin-top: 2px; accent-color: var(--yellow); flex-shrink: 0; }
+.dj-booking-form .wpcf7-acceptance a { color: var(--yellow); text-decoration: underline; }
+.dj-booking-form .cf7-hp { position: absolute !important; left: -9999px !important; top: -9999px !important; width: 1px !important; height: 1px !important; opacity: 0 !important; overflow: hidden !important; }
+.dj-booking-form .wpcf7-response-output {
+  margin-top: 0.5rem !important; padding: 0.75rem 1rem !important; border-radius: 6px !important;
+  font-size: 0.875rem !important; border: 1px solid rgba(225,185,40,0.3) !important; color: var(--gray-light, var(--gray)) !important;
+}
+.grecaptcha-badge { visibility: hidden; }
