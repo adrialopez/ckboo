@@ -3,6 +3,14 @@
   <div class="dj-footer-left">
     <strong class="ckboo-wordmark">Ck<span class="boo">Boo</span></strong> — DJ · Terrassa · Sant Cugat · Barcelona
     <br />
+    <?php $ft_landings = function_exists( 'ckboo_live_landings' ) ? ckboo_live_landings() : []; ?>
+    <?php if ( $ft_landings ) : ?>
+      <nav class="footer-links" aria-label="Servicios y zonas">
+        <?php foreach ( $ft_landings as $l ) : ?>
+          <a href="<?php echo esc_url( $l['url'] ); ?>"><?php echo esc_html( 'zona' === $l['group'] ? 'DJ en ' . $l['nav'] : 'DJ · ' . $l['nav'] ); ?></a>
+        <?php endforeach; ?>
+      </nav>
+    <?php endif; ?>
     <span style="font-size:0.8rem;margin-top:0.25rem;display:block;">
       &copy; <span id="footer-year"></span> Adrià López. Todos los derechos reservados.
       · <a href="<?php echo esc_url( home_url( '/politica-privacidad/' ) ); ?>" style="color:var(--gray);text-decoration:underline;">Privacidad</a>

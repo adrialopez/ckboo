@@ -84,7 +84,7 @@ body.dj-mode {
   top: 0; right: 0; bottom: 0; left: 0;
   background-image:
     linear-gradient(180deg, rgba(8,8,8,0.55) 0%, rgba(8,8,8,0.75) 55%, rgba(8,8,8,0.96) 100%),
-    url('../img/hero-bg.jpg');
+    url('../img/hero-bg.webp');
   background-size: cover;
   background-position: center 30%;
 }
@@ -260,7 +260,7 @@ body.dj-mode {
   top: 0; right: 0; bottom: 0; left: 0;
   background-image:
     linear-gradient(180deg, rgba(8,8,8,0.88) 0%, rgba(8,8,8,0.94) 100%),
-    url('../img/mixes-bg.jpg');
+    url('../img/mixes-bg.webp');
   background-size: cover;
   background-position: center 35%;
 }
@@ -685,3 +685,281 @@ body.dj-mode {
   font-size: 0.875rem !important; border: 1px solid rgba(225,185,40,0.3) !important; color: var(--gray-light, var(--gray)) !important;
 }
 .grecaptcha-badge { visibility: hidden; }
+
+/* ==========================================================
+   Inner pages (legal + landings)
+   ========================================================== */
+  .page-hero {
+    padding: 10rem 0 4rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    background: var(--dark);
+    position: relative;
+    overflow: hidden;
+  }
+  .page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 40%;
+    height: 100%;
+    background: radial-gradient(ellipse at 80% 30%, rgba(225,185,40,0.04) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .page-hero-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  .page-hero .section-label {
+    margin-bottom: 1rem;
+  }
+  .page-hero h1 {
+    font-size: clamp(2.25rem, 5vw, 3.75rem);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--white);
+  }
+  .page-hero-meta {
+    margin-top: 1.5rem;
+    font-size: 0.8125rem;
+    color: var(--gray);
+    letter-spacing: 0.05em;
+  }
+
+  .page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5rem 2rem 7rem;
+  }
+
+  /* Rich text styles */
+  .page-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 3rem 0 1rem;
+    color: var(--white);
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .page-content h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 2rem 0 0.75rem;
+    color: var(--gray-light);
+    font-family: var(--font-body);
+  }
+  .page-content p {
+    font-size: 1rem;
+    color: var(--gray-light);
+    line-height: 1.85;
+    margin-bottom: 1.25rem;
+  }
+  .page-content a {
+    color: var(--yellow);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color var(--transition);
+  }
+  .page-content a:hover { color: var(--yellow-light); }
+  .page-content ul,
+  .page-content ol {
+    margin: 0 0 1.5rem 1.5rem;
+    color: var(--gray-light);
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  .page-content ul { list-style: disc; }
+  .page-content ol { list-style: decimal; }
+  .page-content li { margin-bottom: 0.4rem; }
+  .page-content strong { color: var(--white); font-weight: 600; }
+  .page-content em { color: var(--yellow); font-style: italic; }
+  .page-content blockquote {
+    border-left: 3px solid var(--yellow);
+    padding: 0.75rem 0 0.75rem 1.5rem;
+    margin: 2rem 0;
+    color: var(--gray);
+    font-style: italic;
+  }
+  .page-content hr {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    margin: 3rem 0;
+  }
+  .page-content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin: 2rem 0;
+  }
+  .page-content th,
+  .page-content td {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    color: var(--gray-light);
+  }
+  .page-content th {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    font-weight: 600;
+  }
+  .page-content tr:last-child td { border-bottom: none; }
+
+  /* Back link */
+  .page-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--gray);
+    letter-spacing: 0.05em;
+    transition: color var(--transition);
+    margin-bottom: 4rem;
+  }
+  .page-back:hover { color: var(--yellow); }
+  .page-back svg { transition: transform var(--transition); }
+  .page-back:hover svg { transform: translateX(-3px); }
+
+/* ==========================================================
+   Services, areas, FAQ, landing extras, footer links
+   ========================================================== */
+.section-intro {
+  color: var(--gray-light);
+  max-width: 720px;
+  margin: 1rem 0 2.5rem;
+  line-height: 1.8;
+}
+
+.dj-services,
+.dj-areas,
+.dj-faq {
+  padding: 90px 0;
+  background: var(--dark);
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+.dj-areas { background: var(--black); }
+.dj-services h2,
+.dj-areas h2,
+.dj-faq h2 { font-size: clamp(2rem, 4vw, 3rem); margin-top: 0.5rem; }
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.75rem;
+  background: var(--dark-2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 6px;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.service-card:hover { border-color: rgba(225,185,40,0.5); transform: translateY(-3px); }
+.service-card h3 { font-size: 1.35rem; color: var(--white); }
+.service-card p { color: var(--gray); font-size: 0.95rem; line-height: 1.7; flex: 1; }
+.service-card-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--yellow);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.link-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+}
+.link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--dark-2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 6px;
+  transition: border-color var(--transition), transform var(--transition);
+}
+a.link-card:hover { border-color: rgba(225,185,40,0.5); transform: translateY(-2px); }
+.link-card-static { opacity: 0.7; }
+.link-card-kind {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--yellow);
+}
+.link-card-title { font-family: var(--font-heading); font-size: 1.2rem; color: var(--white); }
+
+.faq-list { margin-top: 2rem; max-width: 820px; }
+.faq-item { border-bottom: 1px solid rgba(255,255,255,0.08); }
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1.25rem 2rem 1.25rem 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--white);
+  position: relative;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  position: absolute;
+  right: 0.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--yellow);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.faq-item[open] summary::after { content: '\2212'; }
+.faq-item p { color: var(--gray-light); line-height: 1.8; padding: 0 2rem 1.5rem 0; }
+
+/* Landing pages */
+.landing-hero .page-hero-inner { max-width: 860px; }
+.landing-crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+}
+.landing-crumbs a { color: var(--gray-light); }
+.landing-crumbs a:hover { color: var(--yellow); }
+.landing-lead {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--gray-light);
+  max-width: 720px;
+}
+.landing-cta { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+.landing-content { padding-top: 4rem; }
+.landing-content h2:first-child { margin-top: 0; }
+.landing-related { padding: 70px 0; border-top: 1px solid rgba(255,255,255,0.04); background: var(--dark); }
+.landing-related h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0.5rem 0 2rem; }
+
+/* Footer links (services and areas) */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  margin: 0.75rem 0 0.5rem;
+  font-size: 0.8rem;
+}
+.footer-links a { color: var(--gray-light); }
+.footer-links a:hover { color: var(--yellow); }
+
+@media (max-width: 600px) {
+  .dj-services, .dj-areas, .dj-faq { padding: 64px 0; }
+  .landing-cta .btn-dj, .landing-cta .btn-dj-outline { width: 100%; justify-content: center; }
+}

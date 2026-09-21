@@ -3,7 +3,7 @@
  * CkBoo — functions.php
  */
 
-define( 'CKBOO_VERSION', '1.0.2' );
+define( 'CKBOO_VERSION', '1.1.1' );
 
 /* ---------------------------------------------------------
  * Theme setup
@@ -126,10 +126,11 @@ function ckboo_get_slides() {
     // Fallback: the photos bundled with the theme.
     $img = get_template_directory_uri() . '/assets/img/';
     return [
-        [ 'src' => $img . 'ckboo-cupra-pulse.jpg',         'srcset' => '', 'alt' => 'CkBoo pinchando en el evento Cupra Pulse en Barcelona',                  'caption' => 'Cupra Pulse · Barcelona' ],
-        [ 'src' => $img . 'ckboo-evento-corporativo.jpg',  'srcset' => '', 'alt' => 'CkBoo pinchando en un evento corporativo al aire libre en Barcelona',   'caption' => 'Evento corporativo' ],
-        [ 'src' => $img . 'ckboo-hero.jpg',                'srcset' => '', 'alt' => 'CkBoo mezclando en directo en un evento corporativo',                    'caption' => 'En directo' ],
+        [ 'src' => $img . 'ckboo-cupra-pulse.webp',         'srcset' => '', 'alt' => 'CkBoo pinchando en el evento Cupra Pulse en Barcelona',                  'caption' => 'Cupra Pulse · Barcelona' ],
+        [ 'src' => $img . 'ckboo-evento-corporativo.webp',  'srcset' => '', 'alt' => 'CkBoo pinchando en un evento corporativo al aire libre en Barcelona',   'caption' => 'Evento corporativo' ],
+        [ 'src' => $img . 'ckboo-hero.webp',                'srcset' => '', 'alt' => 'CkBoo mezclando en directo en un evento corporativo',                    'caption' => 'En directo' ],
     ];
 }
 
 require_once get_template_directory() . '/inc/seo.php';
+require_once get_template_directory() . '/inc/landings.php';

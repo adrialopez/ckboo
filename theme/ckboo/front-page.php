@@ -27,7 +27,7 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
   <div class="dj-hero-bg"></div>
 
   <div class="dj-hero-image">
-    <img src="<?php echo esc_url( $img . 'ckboo-hero.jpg' ); ?>" alt="CkBoo, DJ profesional mezclando en directo en un evento corporativo en Barcelona" fetchpriority="high" />
+    <img src="<?php echo esc_url( $img . 'ckboo-hero.webp' ); ?>" width="560" height="700" alt="CkBoo, DJ profesional mezclando en directo en un evento corporativo en Barcelona" fetchpriority="high" />
   </div>
 
   <div class="dj-hero-tag">Terrassa · Sant Cugat · Barcelona</div>
@@ -51,6 +51,32 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
     </a>
   </div>
 </section>
+
+
+<!-- ======================================================
+     SERVICIOS
+     ====================================================== -->
+<?php $landings = ckboo_live_landings(); ?>
+<?php if ( $landings ) : ?>
+<section class="dj-services" id="servicios">
+  <div class="container">
+    <p class="section-label">Servicios</p>
+    <h2>DJ para cada tipo de evento</h2>
+    <p class="section-intro">
+      Soy CkBoo (Adrià López), DJ con base en Terrassa y más de 20 años de experiencia en eventos privados y corporativos en Terrassa, Sant Cugat, Barcelona y el resto de Catalunya. Pincho todo tipo de música y adapto cada sesión al espacio, al público y al momento.
+    </p>
+    <div class="service-cards">
+      <?php foreach ( $landings as $slug => $l ) : if ( 'servicio' !== $l['group'] ) { continue; } ?>
+        <a class="service-card fade-up" href="<?php echo esc_url( $l['url'] ); ?>">
+          <h3><?php echo esc_html( $l['nav'] ); ?></h3>
+          <p><?php echo esc_html( wp_trim_words( $l['excerpt'], 24, '…' ) ); ?></p>
+          <span class="service-card-more">Ver más <?php echo $arrow; ?></span>
+        </a>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
 
 
 <!-- ======================================================
@@ -160,31 +186,52 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
 
 
 <!-- ======================================================
-     BOOKING
+     ZONAS + FAQ
      ====================================================== -->
-<section class="dj-booking" id="booking" style="padding:100px 0;position:relative;overflow:hidden;border-top:1px solid rgba(255,255,255,0.04);border-bottom:1px solid rgba(255,255,255,0.04);text-align:center;">
-  <div style="position:absolute;top:0;right:0;bottom:0;left:0;background-image:linear-gradient(180deg, rgba(20,20,20,0.90) 0%, rgba(20,20,20,0.96) 100%), url('<?php echo esc_url( $img . 'booking-bg.jpg' ); ?>');background-size:cover;background-position:center 20%;"></div>
-  <div class="container" style="max-width:640px;margin:0 auto;position:relative;z-index:1;">
-    <p class="section-label">Contrataciones</p>
-    <h2 style="margin-top:0.5rem;">¿Buscas un DJ para tu evento?</h2>
-    <p class="fade-up" style="color:var(--gray);margin-top:1rem;margin-bottom:2.5rem;">
-      Tardeos, fiestas mayores, puestas de largo, eventos corporativos y fiestas privadas en Terrassa, Sant Cugat, Barcelona y el resto de Catalunya. Adapto la música al espacio y la audiencia de cada evento. Cuéntame los detalles y te respondo con disponibilidad y presupuesto.
+<?php if ( $landings ) : ?>
+<section class="dj-areas" id="zonas">
+  <div class="container">
+    <p class="section-label">Zonas</p>
+    <h2>Dónde trabajo</h2>
+    <p class="section-intro">
+      Mi base está en Terrassa y me muevo por el Vallès, Barcelona y el resto de Catalunya.
     </p>
-    <div class="dj-booking-form" style="text-align:left;">
-      <?php if ( $form_id && shortcode_exists( 'contact-form-7' ) ) : ?>
-        <?php echo do_shortcode( '[contact-form-7 id="' . $form_id . '" title="Reserva"]' ); ?>
-      <?php else : ?>
-        <p style="text-align:center;"><a href="mailto:dj@ckboo.es?subject=Contrataci%C3%B3n%20CkBoo" class="btn-dj">Escríbeme por email <?php echo $arrow; ?></a></p>
-      <?php endif; ?>
+    <div class="link-cards">
+      <?php foreach ( $landings as $slug => $l ) : if ( 'zona' !== $l['group'] ) { continue; } ?>
+        <a class="link-card fade-up" href="<?php echo esc_url( $l['url'] ); ?>">
+          <span class="link-card-kind">DJ en</span>
+          <span class="link-card-title"><?php echo esc_html( $l['nav'] ); ?></span>
+        </a>
+      <?php endforeach; ?>
+      <span class="link-card link-card-static">
+        <span class="link-card-kind">Y también</span>
+        <span class="link-card-title">Resto de Catalunya</span>
+      </span>
     </div>
-    <p class="fade-up" style="color:var(--gray);margin-top:1.5rem;font-size:0.9rem;">
-      ¿Prefieres escribirme directamente? <a href="mailto:dj@ckboo.es" style="color:var(--yellow);text-decoration:underline;">dj@ckboo.es</a>
-    </p>
-    <p class="fade-up" style="font-size:0.7rem;color:var(--gray);margin-top:1rem;line-height:1.6;">
-      Este sitio está protegido por reCAPTCHA. Se aplican la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--gray);text-decoration:underline;">Política de Privacidad</a> y los <a href="https://policies.google.com/terms" target="_blank" rel="noopener" style="color:var(--gray);text-decoration:underline;">Términos de Servicio</a> de Google.
-    </p>
   </div>
 </section>
+<?php endif; ?>
+
+<section class="dj-faq" id="faq">
+  <div class="container">
+    <p class="section-label">Preguntas frecuentes</p>
+    <h2>Todo lo que suelen preguntarme</h2>
+    <div class="faq-list">
+      <?php foreach ( ckboo_faqs() as $faq ) : ?>
+        <details class="faq-item">
+          <summary><?php echo esc_html( $faq['q'] ); ?></summary>
+          <p><?php echo esc_html( $faq['a'] ); ?></p>
+        </details>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     BOOKING
+     ====================================================== -->
+<?php get_template_part( 'template-parts/booking' ); ?>
 
 
 <!-- ======================================================
@@ -195,7 +242,7 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
 
     <div class="ig-header fade-up">
       <div class="ig-profile">
-        <img src="<?php echo esc_url( $img . 'ckboo-hero.jpg' ); ?>" alt="CkBoo" width="56" height="56" loading="lazy" class="ig-avatar" />
+        <img src="<?php echo esc_url( $img . 'ckboo-avatar.webp' ); ?>" alt="CkBoo" width="56" height="56" loading="lazy" class="ig-avatar" />
         <div>
           <div class="ig-handle">@<?php echo esc_html( $ig_handle ); ?></div>
           <div class="ig-desc">Sígueme para sets, eventos y música</div>
