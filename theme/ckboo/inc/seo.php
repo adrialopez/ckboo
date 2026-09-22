@@ -378,6 +378,10 @@ add_action( 'template_redirect', function () {
     }
 } );
 
+// Note: /favicon.ico is served as a static file straight from the site's
+// document root (bypasses WordPress entirely on this host's LiteSpeed
+// config), not generated here. See favicon.ico at the docroot.
+
 add_filter( 'wp_sitemaps_posts_query_args', function ( $args, $post_type ) {
     if ( 'page' === $post_type ) {
         $exclude = [];
