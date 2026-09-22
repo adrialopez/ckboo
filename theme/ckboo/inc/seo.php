@@ -9,6 +9,7 @@ const CKBOO_SEO_DESC  = 'CkBoo, DJ en Terrassa, Sant Cugat y Barcelona. +20 año
 
 const CKBOO_MIXCLOUD_URL  = 'https://www.mixcloud.com/ckboo/';
 const CKBOO_INSTAGRAM_URL = 'https://www.instagram.com/dj_ckboo/';
+const CKBOO_GBP_URL       = 'https://share.google/HROiBTZGQwi0OyIkW';
 const CKBOO_EMAIL         = 'dj@ckboo.es';
 
 // Set once we have the number, e.g. '34600000000' (country code, no +, no spaces).
@@ -262,7 +263,7 @@ add_action( 'wp_head', function () {
             'homeLocation'  => [ '@type' => 'City', 'name' => 'Terrassa' ],
             'knowsAbout'    => [ 'DJ', 'Música para eventos corporativos', 'Música para fiestas privadas', 'House', 'Tech house', 'Latin house' ],
             'email'         => CKBOO_EMAIL,
-            'sameAs'        => [ CKBOO_MIXCLOUD_URL, CKBOO_INSTAGRAM_URL ],
+            'sameAs'        => [ CKBOO_MIXCLOUD_URL, CKBOO_INSTAGRAM_URL, CKBOO_GBP_URL ],
         ],
         [
             '@type'        => 'ProfessionalService',
@@ -276,7 +277,7 @@ add_action( 'wp_head', function () {
             'address'      => [ '@type' => 'PostalAddress', 'addressLocality' => 'Terrassa', 'addressRegion' => 'Barcelona', 'addressCountry' => 'ES' ],
             'areaServed'   => array_map( 'ckboo_area_node', $areas ),
             'serviceType'  => 'DJ para eventos privados y corporativos',
-            'sameAs'       => [ CKBOO_MIXCLOUD_URL, CKBOO_INSTAGRAM_URL ],
+            'sameAs'       => [ CKBOO_MIXCLOUD_URL, CKBOO_INSTAGRAM_URL, CKBOO_GBP_URL ],
         ],
         [
             '@type'           => 'WebPage',

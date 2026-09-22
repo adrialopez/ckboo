@@ -899,6 +899,20 @@ body.dj-mode {
   font-size: 1rem;
 }
 
+.review-gbp-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+.review-gbp-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--yellow);
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+.review-gbp-link a:hover { color: var(--yellow-light); }
+
 .dj-services,
 .dj-areas,
 .dj-faq {

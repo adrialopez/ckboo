@@ -238,6 +238,9 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
         </div>
       <?php endforeach; ?>
     </div>
+    <p class="review-gbp-link">
+      <a href="<?php echo esc_url( CKBOO_GBP_URL ); ?>" target="_blank" rel="noopener">Ver el perfil y más reseñas en Google <?php echo $arrow; ?></a>
+    </p>
   </div>
 </section>
 <?php endif; ?>
