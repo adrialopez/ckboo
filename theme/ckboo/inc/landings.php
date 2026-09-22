@@ -33,7 +33,7 @@ function ckboo_landings() {
             'seo_title' => 'DJ para bodas en Terrassa, Sant Cugat y Barcelona | CkBoo',
             'seo_desc'  => 'DJ para bodas en Terrassa, Sant Cugat, Barcelona y Catalunya. Música adaptada a cada momento del convite y la fiesta. Pide presupuesto a CkBoo.',
             'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
-            'excerpt'   => 'Soy CkBoo, DJ con más de 20 años poniendo música en todo tipo de celebraciones. También pincho en bodas, adaptando la sesión a cada momento del convite y la fiesta, y a los gustos de los novios y sus invitados.',
+            'excerpt'   => 'En una boda pincho de la cena al baile, sin dejar que la energía decaiga. Adapto la sesión a cada momento del convite y a los gustos de los novios y sus invitados — llevo más de 20 años haciendo esto.',
             'content'   => <<<HTML
 <h2>Música para cada momento de la boda</h2>
 <p>Una boda no es una única fiesta, son varias seguidas: la recepción, el convite, el baile de los novios y la fiesta que sigue después. Cada momento pide un tipo de música distinto, y preparo la sesión escuchando antes qué imagináis los novios para cada uno de ellos.</p>
@@ -67,7 +67,7 @@ HTML,
             'seo_title' => 'DJ para eventos corporativos en Barcelona y Vallès | CkBoo',
             'seo_desc'  => 'DJ para eventos corporativos, presentaciones y fiestas de empresa en Barcelona, Sant Cugat, Terrassa y Catalunya. He pinchado para Nespresso, Cupra y Red Bull.',
             'areas'     => [ 'Barcelona', 'Sant Cugat del Vallès', 'Terrassa', 'Catalunya' ],
-            'excerpt'   => 'Soy CkBoo, DJ con más de 20 años de experiencia en eventos privados y corporativos. Pongo la música en presentaciones, cenas, convenciones y fiestas de empresa, con una sesión pensada para cada momento del evento. He puesto música para Nespresso, Vicio, Cupra y Red Bull.',
+            'excerpt'   => 'Cenas de empresa, presentaciones, convenciones o la fiesta de fin de año: pongo la música pensada para cada momento del evento. He pinchado para marcas como Nespresso, Vicio, Cupra y Red Bull.',
             'content'   => <<<HTML
 <h2>Un DJ profesional para tu evento de empresa</h2>
 <p>La música cambia por completo cómo se vive un evento corporativo. Una buena sesión ayuda a que la gente se relaje, hable entre sí y disfrute, y una mala puede arruinar una noche que llevaba meses de preparación. Por eso preparo cada evento de empresa a medida, escuchando primero qué quieres conseguir y cómo es el público.</p>
@@ -107,7 +107,7 @@ HTML,
             'seo_title' => 'DJ para fiestas privadas en Terrassa y Catalunya | CkBoo',
             'seo_desc'  => 'DJ para todo tipo de celebraciones privadas: cumpleaños, puestas de largo y aniversarios en Terrassa, Sant Cugat, Barcelona y Catalunya. Pide presupuesto.',
             'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
-            'excerpt'   => 'Soy CkBoo, DJ con más de 20 años poniendo música en todo tipo de celebraciones privadas: cumpleaños, puestas de largo, aniversarios y cualquier fiesta que quieras celebrar por todo lo alto. Preparo una sesión personalizada, adaptada a las personas, al espacio y al ambiente que quieres crear.',
+            'excerpt'   => 'Cumpleaños, puestas de largo, aniversarios o cualquier motivo para celebrar por todo lo alto: preparo una sesión personalizada, adaptada a las personas, al espacio y al ambiente que quieres crear.',
             'content'   => <<<HTML
 <h2>Una fiesta privada con la música que te representa</h2>
 <p>Las celebraciones privadas son las que más se recuerdan, y la música tiene mucho que ver con ello. En lugar de aplicar una fórmula, preparo cada fiesta escuchando antes cómo es la celebración, quién va a estar y qué ambiente quieres conseguir.</p>
@@ -147,7 +147,7 @@ HTML,
             'seo_title' => 'DJ para fiestas mayores en Catalunya | DJ CkBoo',
             'seo_desc'  => 'DJ para fiestas mayores y celebraciones populares en Terrassa, Sant Cugat, Barcelona y toda Catalunya. Música para todas las edades. Pide presupuesto a CkBoo.',
             'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
-            'excerpt'   => 'Soy CkBoo, DJ con más de 20 años de experiencia poniendo música en fiestas mayores y celebraciones populares. Preparo una sesión que funcione para todas las edades y voy ajustándola según cómo responda el público.',
+            'excerpt'   => 'En una fiesta mayor conviven varias generaciones a la vez, y mi sesión tiene que funcionar para todas. La voy ajustando en directo según cómo responda el público, con más de 20 años de experiencia detrás.',
             'content'   => <<<HTML
 <h2>Música para toda la fiesta mayor</h2>
 <p>En una fiesta mayor conviven varias generaciones a la vez, y la sesión tiene que llegar a todas. Preparo una selección con clásicos, hits y música de baile que funcione para todos, y la ajusto en directo según cómo vaya respondiendo el público.</p>

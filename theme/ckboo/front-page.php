@@ -37,7 +37,7 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
   </h1>
 
   <p class="dj-hero-sub">
-    Pincho en bodas, eventos de empresa y fiestas privadas, adaptando la música al momento y a la gente que tengo delante.
+    Pincho en bodas, eventos de empresa y fiestas privadas, leyendo la pista para adaptar la música a cada momento.
   </p>
 
   <div class="dj-hero-cta">
@@ -85,22 +85,22 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
 <section class="dj-equipment" id="equipo">
   <div class="container">
     <p class="section-label">Equipo</p>
-    <h2>Solo yo, o yo con el equipo completo</h2>
+    <h2>Equipo técnico</h2>
     <p class="section-intro">
-      Depende del sitio. Si contratas para un club o una sala que ya tiene cabina, sonido e iluminación, vengo solo a pinchar. Si el espacio no tiene nada de eso, lo llevo yo — cabina, sonido e iluminación — y ahí es donde cambia el presupuesto de un evento a otro.
+      En cada evento reviso qué hace falta. Si el espacio ya tiene sonido, iluminación o cabina, los aprovechamos; si no, los llevo yo, adaptados al aforo. Por eso puedes contratar solo la sesión o el equipo completo — lo hablamos según el sitio, y de ahí sale el presupuesto.
     </p>
     <div class="equipment-cards">
       <div class="equipment-card fade-up">
         <h3>Sonido</h3>
-        <p>Si no lo tiene el espacio, lo llevo yo, dimensionado a la gente que vaya a haber.</p>
+        <p>Si el espacio no lo tiene, lo llevo yo, ajustado al aforo.</p>
       </div>
       <div class="equipment-card fade-up">
         <h3>Iluminación</h3>
-        <p>Igual: la aporto cuando hace falta, para dar ambiente a la sesión.</p>
+        <p>Aporta ambiente a la sesión, del cóctel a la pista llena.</p>
       </div>
       <div class="equipment-card fade-up">
         <h3>Cabina de DJ</h3>
-        <p>En clubs y salas suele haber. Si no, llevo la mía.</p>
+        <p>En salas y clubs suele haberla. Si no, pongo la mía.</p>
       </div>
     </div>
   </div>
