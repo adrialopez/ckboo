@@ -28,7 +28,7 @@ function ckboo_faqs() {
         ],
         [
             'q' => '¿Para qué tipo de eventos puedes pinchar?',
-            'a' => 'Para eventos corporativos, tardeos, fiestas mayores, puestas de largo y fiestas privadas como cumpleaños o aniversarios.',
+            'a' => 'Para todo tipo de celebraciones: eventos corporativos, tardeos, fiestas mayores, puestas de largo, fiestas privadas como cumpleaños o aniversarios, y también bodas.',
         ],
         [
             'q' => '¿Qué tipo de música pinchas?',

@@ -122,6 +122,37 @@ HTML,
 HTML,
         ],
 
+        'dj-bodas' => [
+            'group'     => 'servicio',
+            'nav'       => 'Bodas',
+            'title'     => 'DJ para bodas',
+            'label'     => 'Servicio',
+            'seo_title' => 'DJ para bodas en Terrassa, Sant Cugat y Barcelona | CkBoo',
+            'seo_desc'  => 'DJ para bodas en Terrassa, Sant Cugat, Barcelona y Catalunya. Música adaptada a cada momento del convite y la fiesta. Pide presupuesto a CkBoo.',
+            'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
+            'excerpt'   => 'Soy CkBoo, DJ con más de 20 años poniendo música en todo tipo de celebraciones. También pincho en bodas, adaptando la sesión a cada momento del convite y la fiesta, y a los gustos de los novios y sus invitados.',
+            'content'   => <<<HTML
+<h2>Música para cada momento de la boda</h2>
+<p>Una boda no es una única fiesta, son varias seguidas: la recepción, el convite, el baile de los novios y la fiesta que sigue después. Cada momento pide un tipo de música distinto, y preparo la sesión escuchando antes qué imagináis los novios para cada uno de ellos.</p>
+
+<h2>De la cena al baile</h2>
+<p>Durante la cena, música tranquila que acompañe sin imponerse. Al terminar, subo la energía poco a poco hasta llenar la pista, leyendo al público según van entrando invitados de edades y gustos distintos. No sigo una lista cerrada: construyo la sesión en directo, como en cualquier otra celebración.</p>
+
+<h2>Todo tipo de música, a vuestro gusto</h2>
+<p>Pincho todo tipo de música, así que hablamos antes de la boda de lo que os gusta, lo que no puede faltar y lo que preferís evitar. Mis sesiones grabadas se mueven entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a> para hacerte una idea de mi estilo.</p>
+
+<h2>Más de 20 años en celebraciones privadas</h2>
+<p>Llevo más de 20 años poniendo música en celebraciones privadas y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar con públicos muy variados y a que un evento salga bien de principio a fin.</p>
+
+<h2>Cómo pedir presupuesto</h2>
+<ol>
+<li>Cuéntame en el formulario la fecha de la boda, el lugar y cómo os la imagináis.</li>
+<li>Te respondo con disponibilidad y presupuesto.</li>
+<li>Preparamos juntos la música para cada momento del día.</li>
+</ol>
+HTML,
+        ],
+
         'dj-terrassa' => [
             'group'     => 'zona',
             'nav'       => 'Terrassa',
