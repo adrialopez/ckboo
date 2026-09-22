@@ -864,6 +864,41 @@ body.dj-mode {
   line-height: 1.8;
 }
 
+.dj-reviews {
+  padding: 90px 0;
+  background: var(--dark);
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+.dj-reviews h2 { font-size: clamp(2rem, 4vw, 3rem); margin-top: 0.5rem; margin-bottom: 2rem; }
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+.review-card {
+  padding: 2rem;
+  background: var(--dark-2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 6px;
+}
+.review-stars {
+  color: var(--yellow);
+  letter-spacing: 0.15em;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.review-quote {
+  color: var(--gray-light);
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+.review-author {
+  font-family: var(--font-heading);
+  color: var(--white);
+  font-size: 1rem;
+}
+
 .dj-services,
 .dj-areas,
 .dj-faq {
@@ -1021,6 +1056,6 @@ a.link-card:hover { border-color: rgba(225,185,40,0.5); transform: translateY(-2
 .dj-mixes-club-teaser a { color: var(--yellow); text-decoration: underline; text-underline-offset: 3px; }
 
 @media (max-width: 600px) {
-  .dj-services, .dj-areas, .dj-faq, .dj-equipment { padding: 64px 0; }
+  .dj-services, .dj-areas, .dj-faq, .dj-equipment, .dj-reviews { padding: 64px 0; }
   .landing-cta .btn-dj, .landing-cta .btn-dj-outline { width: 100%; justify-content: center; }
 }

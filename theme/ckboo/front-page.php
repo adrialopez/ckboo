@@ -221,6 +221,29 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
 
 
 <!-- ======================================================
+     RESEÑAS
+     ====================================================== -->
+<?php $reviews = ckboo_reviews(); ?>
+<?php if ( $reviews ) : ?>
+<section class="dj-reviews" id="resenas">
+  <div class="container">
+    <p class="section-label">Reseñas</p>
+    <h2>Lo que dicen de mí</h2>
+    <div class="review-cards">
+      <?php foreach ( $reviews as $review ) : ?>
+        <div class="review-card fade-up">
+          <div class="review-stars" aria-label="<?php echo esc_attr( $review['rating'] ); ?> de 5 estrellas"><?php echo str_repeat( '★', $review['rating'] ); ?></div>
+          <p class="review-quote">"<?php echo esc_html( $review['text'] ); ?>"</p>
+          <p class="review-author"><?php echo esc_html( $review['name'] ); ?></p>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
+
+
+<!-- ======================================================
      ZONAS + FAQ
      ====================================================== -->
 <?php if ( $landings ) : ?>

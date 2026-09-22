@@ -20,6 +20,27 @@ function ckboo_whatsapp_url() {
 }
 
 /**
+ * Reviews: shown on the home page and exposed as Review/AggregateRating schema.
+ * Sourced from Google reviews of the business, lightly cleaned up (typos only).
+ *
+ * @return array[] Each: name, rating (1-5), text.
+ */
+function ckboo_reviews() {
+    return [
+        [
+            'name'   => 'Lluís',
+            'rating' => 5,
+            'text'   => 'Muy recomendable. Profesionales, cercanos y buena música y gran ambiente asegurados. Estuvieron en nuestra boda y fue increíble. Mil gracias Adri y equipo.',
+        ],
+        [
+            'name'   => 'Abel',
+            'rating' => 5,
+            'text'   => 'Un profesional. Se adaptó perfectamente a la gente en todo momento, disfrutamos desde los más pequeños a los más mayores. Brutal.',
+        ],
+    ];
+}
+
+/**
  * Frequently asked questions: shown on the home page and exposed as FAQPage schema.
  *
  * @return array[] Each: q, a (plain text).
@@ -276,6 +297,24 @@ add_action( 'wp_head', function () {
             'name'            => 'Servicios de DJ',
             'itemListElement' => $catalog,
         ];
+    }
+
+    $reviews = is_front_page() ? ckboo_reviews() : [];
+    if ( $reviews ) {
+        $ratings = array_column( $reviews, 'rating' );
+        $graph[2]['aggregateRating'] = [
+            '@type'       => 'AggregateRating',
+            'ratingValue' => round( array_sum( $ratings ) / count( $ratings ), 1 ),
+            'reviewCount' => count( $reviews ),
+        ];
+        $graph[2]['review'] = array_map( function ( $r ) {
+            return [
+                '@type'        => 'Review',
+                'author'       => [ '@type' => 'Person', 'name' => $r['name'] ],
+                'reviewRating' => [ '@type' => 'Rating', 'ratingValue' => $r['rating'], 'bestRating' => 5 ],
+                'reviewBody'   => $r['text'],
+            ];
+        }, $reviews );
     }
 
     if ( is_front_page() ) {
