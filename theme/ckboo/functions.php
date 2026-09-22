@@ -3,7 +3,7 @@
  * CkBoo — functions.php
  */
 
-define( 'CKBOO_VERSION', '1.1.2' );
+define( 'CKBOO_VERSION', '1.2.0' );
 
 /* ---------------------------------------------------------
  * Theme setup

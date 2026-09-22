@@ -1,10 +1,18 @@
 <?php
 /**
- * CkBoo — landing pages (services and areas).
+ * CkBoo — landing pages (services, format, professional, and areas).
  *
  * The copy below is only the starting content: `ckboo_seed_landings()` creates
  * the pages once and from then on everything is editable in the WordPress admin
  * (title, body, excerpt = intro paragraph, and the "SEO" box for title/description).
+ *
+ * Groups:
+ * - servicio    : client segments, shown as cards in the home "Servicios" grid.
+ * - formato     : a way an event can happen (e.g. tardeos), cross-links into the
+ *                 segments above instead of competing with them. Not in the grid.
+ * - profesional : audience is venues/promoters, not people planning a celebration.
+ *                 Different CTA. Not in the grid.
+ * - zona        : areas served, shown as cards in the home "Zonas" grid.
  */
 
 const CKBOO_LANDING_TEMPLATE = 'page-landing.php';
@@ -16,6 +24,40 @@ function ckboo_landings() {
     $mix = esc_url( CKBOO_MIXCLOUD_URL );
 
     return [
+
+        'dj-bodas' => [
+            'group'     => 'servicio',
+            'nav'       => 'Bodas',
+            'title'     => 'DJ para bodas',
+            'label'     => 'Servicio',
+            'seo_title' => 'DJ para bodas en Terrassa, Sant Cugat y Barcelona | CkBoo',
+            'seo_desc'  => 'DJ para bodas en Terrassa, Sant Cugat, Barcelona y Catalunya. Música adaptada a cada momento del convite y la fiesta. Pide presupuesto a CkBoo.',
+            'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
+            'excerpt'   => 'Soy CkBoo, DJ con más de 20 años poniendo música en todo tipo de celebraciones. También pincho en bodas, adaptando la sesión a cada momento del convite y la fiesta, y a los gustos de los novios y sus invitados.',
+            'content'   => <<<HTML
+<h2>Música para cada momento de la boda</h2>
+<p>Una boda no es una única fiesta, son varias seguidas: la recepción, el convite, el baile de los novios y la fiesta que sigue después. Cada momento pide un tipo de música distinto, y preparo la sesión escuchando antes qué imagináis los novios para cada uno de ellos.</p>
+
+<h2>De la cena al baile</h2>
+<p>Durante la cena, música tranquila que acompañe sin imponerse. Al terminar, subo la energía poco a poco hasta llenar la pista, leyendo al público según van entrando invitados de edades y gustos distintos. No sigo una lista cerrada: construyo la sesión en directo, como en cualquier otra celebración.</p>
+
+<h2>Todo tipo de música, a vuestro gusto</h2>
+<p>No me caso ni con un estilo ni con una década, así que hablamos antes de la boda de lo que os gusta, lo que no puede faltar y lo que preferís evitar. Mis sesiones grabadas se mueven entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a> para hacerte una idea de mi estilo.</p>
+
+<h2>Más de 20 años en celebraciones privadas</h2>
+<p>Llevo más de 20 años poniendo música en celebraciones privadas y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar con públicos muy variados y a que un evento salga bien de principio a fin.</p>
+
+<h2>Equipo propio</h2>
+<p>Llevo mi propio equipo de sonido, iluminación y cabina de DJ, adaptado al espacio: el presupuesto se ajusta a lo que haga falta llevar.</p>
+
+<h2>Cómo pedir presupuesto</h2>
+<ol>
+<li>Cuéntame en el formulario la fecha de la boda, el lugar y cómo os la imagináis.</li>
+<li>Te respondo con disponibilidad y presupuesto.</li>
+<li>Preparamos juntos la música para cada momento del día.</li>
+</ol>
+HTML,
+        ],
 
         'dj-eventos-corporativos' => [
             'group'     => 'servicio',
@@ -40,10 +82,13 @@ function ckboo_landings() {
 
 <h2>La música se adapta a cada momento</h2>
 <p>Un evento corporativo casi nunca tiene un único ritmo: hay un momento de llegada, otro de conversación y, muchas veces, un cierre más festivo. Adapto la sesión a esos momentos, al espacio y a la gente que está delante, sin lista cerrada y con el volumen y la energía que pida cada fase.</p>
-<p>Mis sesiones grabadas se mueven entre house, tech house y latin house, pero en un evento manda lo que el público necesita. Puedes escuchar mi estilo en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>.</p>
+<p>No me caso ni con un estilo ni con una década: en un evento manda lo que el público necesita. Mis sesiones grabadas se mueven entre house, tech house y latin house; puedes escuchar mi estilo en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>.</p>
 
 <h2>Experiencia con marcas</h2>
 <p>He puesto música para <strong>Nespresso, Vicio, Cupra y Red Bull</strong>, entre otros, en eventos como Cupra Pulse en Barcelona. Trabajo con soltura en espacios y formatos muy distintos, desde un espacio de oficina hasta un evento al aire libre.</p>
+
+<h2>Equipo propio</h2>
+<p>Llevo mi propio equipo de sonido, iluminación y cabina de DJ, adaptado al espacio: el presupuesto se ajusta a lo que haga falta llevar.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
@@ -54,64 +99,36 @@ function ckboo_landings() {
 HTML,
         ],
 
-        'dj-tardeos-fiestas-mayores' => [
+        'dj-fiestas-privadas' => [
             'group'     => 'servicio',
-            'nav'       => 'Tardeos y fiestas mayores',
-            'title'     => 'DJ para tardeos y fiestas mayores',
+            'nav'       => 'Fiestas privadas',
+            'title'     => 'DJ para fiestas privadas',
             'label'     => 'Servicio',
-            'seo_title' => 'DJ para tardeos y fiestas mayores en Catalunya | CkBoo',
-            'seo_desc'  => 'DJ para tardeos y fiestas mayores en Terrassa, Sant Cugat, Barcelona y toda Catalunya. Todo tipo de música adaptada al público. Pide presupuesto a CkBoo.',
+            'seo_title' => 'DJ para fiestas privadas en Terrassa y Catalunya | CkBoo',
+            'seo_desc'  => 'DJ para todo tipo de celebraciones privadas: cumpleaños, puestas de largo y aniversarios en Terrassa, Sant Cugat, Barcelona y Catalunya. Pide presupuesto.',
             'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
-            'excerpt'   => 'Soy CkBoo, DJ con más de 20 años poniendo música en celebraciones populares y privadas. Para tardeos y fiestas mayores construyo la sesión sobre la marcha, según quién esté delante, para que la pista no pare.',
-            'content'   => <<<HTML
-<h2>Música para que la fiesta arranque y no baje</h2>
-<p>Un tardeo y una fiesta mayor comparten lo esencial: mucha gente, ganas de pasarlo bien y un público que mezcla edades y gustos. Ahí no funciona una lista cerrada. Leo la pista y voy construyendo la sesión en tiempo real, pinchando <strong>todo tipo de música</strong> según lo que pida el momento.</p>
-
-<h2>Tardeos</h2>
-<p>El tardeo empieza con la luz del día y termina ya de noche, y la música tiene que acompañar ese recorrido: ambiente agradable al principio, más energía a medida que se llena la pista. Lo adapto al espacio, sea un local, una terraza o un evento privado, y a la gente que ha venido.</p>
-
-<h2>Fiestas mayores y celebraciones populares</h2>
-<p>En una fiesta mayor conviven distintas generaciones y hay que llegar a todas. Preparo una sesión con hits, clásicos y música de baile que funcione para todos, y la voy ajustando según cómo responda el público.</p>
-
-<h2>Música personalizada para tu evento</h2>
-<p>Adapto la música al espacio, a la audiencia y al tipo de celebración. Si tienes claro lo que quieres, o lo que no, dímelo en el formulario y lo tendré en cuenta. Mis sesiones grabadas se mueven entre house, tech house y latin house; puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>.</p>
-
-<h2>Dónde trabajo</h2>
-<p>Mi base está en Terrassa y me muevo por el Vallès, Barcelona y el resto de Catalunya. Consulta también mis páginas de <a href="/dj-terrassa/">DJ en Terrassa</a>, <a href="/dj-sant-cugat/">DJ en Sant Cugat</a> y <a href="/dj-barcelona/">DJ en Barcelona</a>.</p>
-
-<h2>Cómo pedir presupuesto</h2>
-<ol>
-<li>Cuéntame en el formulario el tipo de evento, la fecha aproximada y el lugar.</li>
-<li>Te respondo con disponibilidad y presupuesto.</li>
-<li>Concretamos los detalles de la música antes del día del evento.</li>
-</ol>
-HTML,
-        ],
-
-        'dj-puestas-de-largo-fiestas-privadas' => [
-            'group'     => 'servicio',
-            'nav'       => 'Puestas de largo y fiestas privadas',
-            'title'     => 'DJ para puestas de largo y fiestas privadas',
-            'label'     => 'Servicio',
-            'seo_title' => 'DJ para puestas de largo y fiestas privadas | CkBoo',
-            'seo_desc'  => 'DJ para puestas de largo, cumpleaños, aniversarios y fiestas privadas en Terrassa, Sant Cugat, Barcelona y Catalunya. Música a medida. Pide presupuesto.',
-            'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
-            'excerpt'   => 'Soy CkBoo, DJ con más de 20 años poniendo música en celebraciones privadas. Para puestas de largo y fiestas privadas preparo una sesión personalizada, adaptada a las personas, al espacio y al ambiente que quieres crear.',
+            'excerpt'   => 'Soy CkBoo, DJ con más de 20 años poniendo música en todo tipo de celebraciones privadas: cumpleaños, puestas de largo, aniversarios y cualquier fiesta que quieras celebrar por todo lo alto. Preparo una sesión personalizada, adaptada a las personas, al espacio y al ambiente que quieres crear.',
             'content'   => <<<HTML
 <h2>Una fiesta privada con la música que te representa</h2>
 <p>Las celebraciones privadas son las que más se recuerdan, y la música tiene mucho que ver con ello. En lugar de aplicar una fórmula, preparo cada fiesta escuchando antes cómo es la celebración, quién va a estar y qué ambiente quieres conseguir.</p>
 
+<h2>Todo tipo de celebraciones</h2>
+<p>Cumpleaños, puestas de largo, aniversarios o cualquier otro motivo para celebrar: pincho en todo tipo de fiestas privadas. Cada una tiene su propio ritmo, y preparo la sesión según cómo quieras que se sienta la tuya.</p>
+
 <h2>Puestas de largo</h2>
 <p>Una puesta de largo es una celebración especial con momentos importantes a lo largo de la noche. Hablamos de cómo quieres que suene cada uno de ellos y de qué música esperáis los invitados, y después construyo una sesión que acompañe toda la fiesta, desde el inicio más tranquilo hasta la pista de baile.</p>
 
-<h2>Cumpleaños, aniversarios y otras fiestas privadas</h2>
+<h2>Cumpleaños y aniversarios</h2>
 <p>Pincho en cumpleaños, aniversarios y celebraciones entre amigos y familia. Sé leer a un público que puede mezclar edades y gustos, y voy cambiando de estilo según lo que necesite la pista, sin dejar nada a medias.</p>
 
 <h2>Todo tipo de música, a medida</h2>
-<p>Pincho todo tipo de música y adapto la sesión al espacio y a la audiencia. Mis sesiones grabadas se mueven entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>. En tu fiesta, la música la decide la gente que la disfruta.</p>
+<p>No me caso ni con un estilo ni con una década. Mis sesiones grabadas se mueven entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>. En tu fiesta, la música la decide la gente que la disfruta.</p>
 
 <h2>Residente en Txocu</h2>
 <p>Soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar en celebraciones privadas con público muy variado.</p>
+
+<h2>Equipo propio</h2>
+<p>Llevo mi propio equipo de sonido, iluminación y cabina de DJ, adaptado al espacio: el presupuesto se ajusta a lo que haga falta llevar.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
@@ -122,34 +139,91 @@ HTML,
 HTML,
         ],
 
-        'dj-bodas' => [
+        'dj-fiestas-mayores' => [
             'group'     => 'servicio',
-            'nav'       => 'Bodas',
-            'title'     => 'DJ para bodas',
+            'nav'       => 'Fiestas mayores',
+            'title'     => 'DJ para fiestas mayores',
             'label'     => 'Servicio',
-            'seo_title' => 'DJ para bodas en Terrassa, Sant Cugat y Barcelona | CkBoo',
-            'seo_desc'  => 'DJ para bodas en Terrassa, Sant Cugat, Barcelona y Catalunya. Música adaptada a cada momento del convite y la fiesta. Pide presupuesto a CkBoo.',
+            'seo_title' => 'DJ para fiestas mayores en Catalunya | DJ CkBoo',
+            'seo_desc'  => 'DJ para fiestas mayores y celebraciones populares en Terrassa, Sant Cugat, Barcelona y toda Catalunya. Música para todas las edades. Pide presupuesto a CkBoo.',
             'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
-            'excerpt'   => 'Soy CkBoo, DJ con más de 20 años poniendo música en todo tipo de celebraciones. También pincho en bodas, adaptando la sesión a cada momento del convite y la fiesta, y a los gustos de los novios y sus invitados.',
+            'excerpt'   => 'Soy CkBoo, DJ con más de 20 años de experiencia poniendo música en fiestas mayores y celebraciones populares. Preparo una sesión que funcione para todas las edades y voy ajustándola según cómo responda el público.',
             'content'   => <<<HTML
-<h2>Música para cada momento de la boda</h2>
-<p>Una boda no es una única fiesta, son varias seguidas: la recepción, el convite, el baile de los novios y la fiesta que sigue después. Cada momento pide un tipo de música distinto, y preparo la sesión escuchando antes qué imagináis los novios para cada uno de ellos.</p>
+<h2>Música para toda la fiesta mayor</h2>
+<p>En una fiesta mayor conviven varias generaciones a la vez, y la sesión tiene que llegar a todas. Preparo una selección con clásicos, hits y música de baile que funcione para todos, y la ajusto en directo según cómo vaya respondiendo el público.</p>
 
-<h2>De la cena al baile</h2>
-<p>Durante la cena, música tranquila que acompañe sin imponerse. Al terminar, subo la energía poco a poco hasta llenar la pista, leyendo al público según van entrando invitados de edades y gustos distintos. No sigo una lista cerrada: construyo la sesión en directo, como en cualquier otra celebración.</p>
+<h2>De la tarde a la noche</h2>
+<p>Muchas fiestas mayores empiezan por la tarde con un ambiente familiar y terminan de noche con la pista llena. Adapto la energía de la sesión a cada momento, sin dejar que decaiga, tanto si es un tardeo de tarde como la fiesta de después.</p>
 
-<h2>Todo tipo de música, a vuestro gusto</h2>
-<p>Pincho todo tipo de música, así que hablamos antes de la boda de lo que os gusta, lo que no puede faltar y lo que preferís evitar. Mis sesiones grabadas se mueven entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a> para hacerte una idea de mi estilo.</p>
+<h2>Todo tipo de música</h2>
+<p>No me caso ni con un estilo ni con una década: pincho lo que pida el momento para que la fiesta funcione, sea cual sea el público que tenga delante.</p>
 
-<h2>Más de 20 años en celebraciones privadas</h2>
-<p>Llevo más de 20 años poniendo música en celebraciones privadas y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar con públicos muy variados y a que un evento salga bien de principio a fin.</p>
+<h2>Más de 20 años de experiencia</h2>
+<p>Llevo más de 20 años poniendo música en celebraciones privadas y populares, y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>.</p>
+
+<h2>Equipo propio</h2>
+<p>Llevo mi propio equipo de sonido, iluminación y cabina de DJ, adaptado al espacio: el presupuesto se ajusta a lo que haga falta llevar.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
-<li>Cuéntame en el formulario la fecha de la boda, el lugar y cómo os la imagináis.</li>
+<li>Cuéntame en el formulario la fecha, el lugar y el tipo de fiesta.</li>
 <li>Te respondo con disponibilidad y presupuesto.</li>
-<li>Preparamos juntos la música para cada momento del día.</li>
+<li>Preparamos juntos la selección musical.</li>
 </ol>
+HTML,
+        ],
+
+        'dj-tardeos' => [
+            'group'     => 'formato',
+            'nav'       => 'Tardeos',
+            'title'     => 'DJ para tardeos',
+            'label'     => 'Formato',
+            'seo_title' => 'DJ para tardeos en Terrassa, Sant Cugat y Barcelona | CkBoo',
+            'seo_desc'  => 'DJ para tardeos en fiestas privadas, clubs y fiestas mayores en Terrassa, Sant Cugat, Barcelona y Catalunya. Música que sube de energía con el día. Pide presupuesto.',
+            'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
+            'excerpt'   => 'Un tardeo empieza con luz de día y termina ya de noche, y la música tiene que acompañar ese recorrido. Puede ser en una fiesta privada, en un club o en una fiesta mayor — en cualquier caso, adapto la sesión al momento y al público.',
+            'content'   => <<<HTML
+<h2>¿Qué es un tardeo?</h2>
+<p>Un tardeo es una fiesta que empieza por la tarde, con luz de día, y va subiendo de energía hasta la noche. La música tiene que acompañar ese recorrido: ambiente tranquilo al principio, más intensidad a medida que se llena la pista.</p>
+
+<h2>Un tardeo puede ser distintas cosas</h2>
+<ul>
+<li>Una <strong>fiesta privada</strong>, en una terraza, jardín o local. <a href="/dj-fiestas-privadas/">Más información</a>.</li>
+<li>Una sesión en un <strong>club o sala</strong>. <a href="/dj-clubs-y-salas/">Más información</a>.</li>
+<li>Parte de una <strong>fiesta mayor</strong> o celebración popular. <a href="/dj-fiestas-mayores/">Más información</a>.</li>
+</ul>
+<p>Sea cual sea el contexto, me adapto igual: leo la pista y construyo la sesión en directo, sin lista cerrada ni un estilo o década fijos.</p>
+
+<h2>Cómo pedir presupuesto</h2>
+<p>Cuéntame en el formulario si tu tardeo es una fiesta privada, un club o una fiesta mayor, junto con la fecha y el lugar, y te respondo con disponibilidad y presupuesto.</p>
+HTML,
+        ],
+
+        'dj-clubs-y-salas' => [
+            'group'     => 'profesional',
+            'nav'       => 'Salas y clubs',
+            'title'     => 'DJ CkBoo para clubs y salas',
+            'label'     => 'Salas y clubs',
+            'seo_title' => 'DJ CkBoo para clubs y salas en Catalunya',
+            'seo_desc'  => 'DJ CkBoo busca fechas para pinchar en clubs y salas. Ha pinchado en Hola Club (Sitges), Sala Apolo y Atlantic Club. Sesiones de house, tech house y latin house.',
+            'areas'     => [ 'Barcelona', 'Sitges', 'Catalunya' ],
+            'excerpt'   => 'Además de eventos privados y corporativos, busco fechas para pinchar en clubs y salas. He pinchado en Hola Club (Sitges), Sala Apolo (Barcelona) y Atlantic Club (Barcelona). Si programas una sala y buscas un DJ, escríbeme.',
+            'content'   => <<<HTML
+<h2>Un DJ con experiencia en sala</h2>
+<p>Además de mi trabajo en eventos privados y corporativos, pincho en clubs y salas. Me interesa seguir sumando fechas y colaborando con programadores que buscan una sesión de house, tech house y latin house con oficio.</p>
+
+<h2>Dónde he pinchado</h2>
+<ul>
+<li><strong>Hola Club</strong> (Sitges)</li>
+<li><strong>Sala Apolo</strong> (Barcelona)</li>
+<li><strong>Atlantic Club</strong> (Barcelona)</li>
+</ul>
+
+<h2>Mi estilo</h2>
+<p>Mis sesiones se mueven entre house, tech house y latin house. Puedes escuchar mis mixes grabados en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a> antes de contactarme, para hacerte una idea de cómo sesiono en sala.</p>
+
+<h2>¿Programas una sala o un club?</h2>
+<p>Si buscas un DJ para una fecha, una residencia o un evento puntual, escríbeme a dj@ckboo.es o rellena el formulario contándome la sala, el tipo de sesión que buscas y las fechas disponibles.</p>
 HTML,
         ],
 
@@ -159,23 +233,23 @@ HTML,
             'title'     => 'DJ en Terrassa para eventos privados y corporativos',
             'label'     => 'Zona · Terrassa',
             'seo_title' => 'DJ en Terrassa para eventos y fiestas | DJ CkBoo',
-            'seo_desc'  => 'DJ en Terrassa para fiestas mayores, tardeos, celebraciones privadas y eventos de empresa. +20 años de experiencia. Pide presupuesto a CkBoo.',
+            'seo_desc'  => 'DJ en Terrassa para bodas, fiestas privadas, eventos de empresa y fiestas mayores. +20 años de experiencia. Pide presupuesto a CkBoo.',
             'areas'     => [ 'Terrassa', 'Vallès Occidental' ],
             'excerpt'   => 'Soy CkBoo, DJ con base en Terrassa y más de 20 años poniendo música en eventos privados y corporativos. Adapto cada sesión al espacio, al público y al momento de tu celebración.',
             'content'   => <<<HTML
 <h2>Un DJ en Terrassa para eventos de todo tipo</h2>
-<p>Si buscas un DJ en Terrassa, trabajo desde aquí: mi base está en la ciudad, así que moverme por Terrassa y el resto del Vallès es lo más natural para mí. Pincho en fiestas privadas, celebraciones de amigos y familia, eventos de empresa y fiestas populares, siempre con una sesión pensada para quien va a estar delante.</p>
+<p>Si buscas un DJ en Terrassa, trabajo desde aquí: mi base está en la ciudad, así que moverme por Terrassa y el resto del Vallès es lo más natural para mí. Pincho en bodas, fiestas privadas, eventos de empresa y fiestas populares, siempre con una sesión pensada para quien va a estar delante.</p>
 
 <h2>Eventos en Terrassa en los que puedo pinchar</h2>
 <ul>
-<li><strong>Fiestas mayores y de barrio</strong>, con público de todas las edades. <a href="/dj-tardeos-fiestas-mayores/">Más información</a>.</li>
-<li><strong>Tardeos</strong> en locales, terrazas y espacios privados.</li>
-<li><strong>Puestas de largo y fiestas privadas</strong>, desde cumpleaños hasta aniversarios. <a href="/dj-puestas-de-largo-fiestas-privadas/">Más información</a>.</li>
+<li><strong>Bodas.</strong> <a href="/dj-bodas/">Más información</a>.</li>
 <li><strong>Eventos de empresa</strong>: cenas, presentaciones y celebraciones de equipo. <a href="/dj-eventos-corporativos/">Más información</a>.</li>
+<li><strong>Fiestas privadas</strong>: cumpleaños, puestas de largo, aniversarios. <a href="/dj-fiestas-privadas/">Más información</a>.</li>
+<li><strong>Fiestas mayores y de barrio</strong>, con público de todas las edades. <a href="/dj-fiestas-mayores/">Más información</a>.</li>
 </ul>
 
 <h2>La música se adapta a tu evento</h2>
-<p>No tengo un repertorio cerrado. Pincho todo tipo de música y construyo la sesión sobre la marcha según el espacio, la hora y quién esté bailando. Mis sesiones grabadas se mueven entre house, tech house y latin house, pero en un evento manda lo que necesite la gente para no parar de bailar. Puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>.</p>
+<p>No tengo un repertorio cerrado. No me caso ni con un estilo ni con una década: construyo la sesión sobre la marcha según el espacio, la hora y quién esté bailando. Mis sesiones grabadas se mueven entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>.</p>
 
 <h2>Más de 20 años de experiencia</h2>
 <p>Llevo más de 20 años poniendo música en eventos privados y celebraciones. He puesto música para marcas como Nespresso, Vicio, Cupra y Red Bull y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>.</p>
@@ -195,25 +269,26 @@ HTML,
             'title'     => 'DJ en Sant Cugat para eventos privados y corporativos',
             'label'     => 'Zona · Sant Cugat del Vallès',
             'seo_title' => 'DJ en Sant Cugat para eventos y fiestas | DJ CkBoo',
-            'seo_desc'  => 'DJ en Sant Cugat del Vallès para fiestas privadas, eventos de empresa, tardeos y fiestas mayores. DJ residente de Txocu. Pide presupuesto a CkBoo.',
+            'seo_desc'  => 'DJ en Sant Cugat del Vallès para bodas, fiestas privadas, eventos de empresa y fiestas mayores. DJ residente de Txocu. Pide presupuesto a CkBoo.',
             'areas'     => [ 'Sant Cugat del Vallès', 'Vallès Occidental' ],
             'excerpt'   => 'Soy CkBoo, DJ con más de 20 años de experiencia en eventos privados y corporativos. Pincho con regularidad en Sant Cugat: soy el DJ residente para los eventos privados de Txocu.',
             'content'   => <<<HTML
 <h2>Un DJ en Sant Cugat para tus fiestas y eventos</h2>
-<p>Sant Cugat es una de las zonas donde más pincho, y lo hago con una idea clara: adaptar la música al espacio y a la gente. Ya sea una fiesta privada, un evento de empresa o una celebración con amigos, preparo la sesión para que encaje con el ambiente que quieres crear.</p>
+<p>Sant Cugat es una de las zonas donde más pincho, y lo hago con una idea clara: adaptar la música al espacio y a la gente. Ya sea una boda, una fiesta privada, un evento de empresa o una celebración con amigos, preparo la sesión para que encaje con el ambiente que quieres crear.</p>
 
 <h2>DJ residente en Txocu</h2>
 <p>Soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, un espacio donde trabajo regularmente con públicos muy variados. Esa experiencia me ayuda a leer rápido a la gente y a ajustar la música en directo.</p>
 
 <h2>Eventos en Sant Cugat en los que puedo pinchar</h2>
 <ul>
-<li><strong>Fiestas privadas y puestas de largo</strong>, con música personalizada. <a href="/dj-puestas-de-largo-fiestas-privadas/">Más información</a>.</li>
+<li><strong>Bodas.</strong> <a href="/dj-bodas/">Más información</a>.</li>
 <li><strong>Eventos corporativos</strong>: cenas de empresa, presentaciones, lanzamientos y fiestas de equipo. <a href="/dj-eventos-corporativos/">Más información</a>.</li>
-<li><strong>Tardeos y fiestas mayores</strong> con todo tipo de público. <a href="/dj-tardeos-fiestas-mayores/">Más información</a>.</li>
+<li><strong>Fiestas privadas y puestas de largo</strong>, con música personalizada. <a href="/dj-fiestas-privadas/">Más información</a>.</li>
+<li><strong>Fiestas mayores</strong> con todo tipo de público. <a href="/dj-fiestas-mayores/">Más información</a>.</li>
 </ul>
 
 <h2>Música a medida, sin lista cerrada</h2>
-<p>Pincho todo tipo de música y construyo la sesión sobre la marcha, según quién esté delante. Mis mixes se mueven entre house, tech house y latin house, y puedes escucharlos en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>. En tu evento, la música se adapta a la pista.</p>
+<p>No me caso ni con un estilo ni con una década: construyo la sesión sobre la marcha, según quién esté delante. Mis mixes se mueven entre house, tech house y latin house, y puedes escucharlos en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>. En tu evento, la música se adapta a la pista.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
@@ -230,7 +305,7 @@ HTML,
             'title'     => 'DJ en Barcelona para eventos privados y corporativos',
             'label'     => 'Zona · Barcelona',
             'seo_title' => 'DJ en Barcelona para eventos y empresas | DJ CkBoo',
-            'seo_desc'  => 'DJ en Barcelona para eventos corporativos, fiestas privadas y tardeos. He pinchado para Cupra, Nespresso y Red Bull. Pide presupuesto a CkBoo.',
+            'seo_desc'  => 'DJ en Barcelona para eventos corporativos, bodas y fiestas privadas. He pinchado para Cupra, Nespresso y Red Bull, y en salas como Apolo. Pide presupuesto.',
             'areas'     => [ 'Barcelona', 'Barcelonès' ],
             'excerpt'   => 'Soy CkBoo, DJ nacido en Barcelona y con más de 20 años de experiencia poniendo música en eventos privados y corporativos. Adapto la sesión al espacio, al público y al momento.',
             'content'   => <<<HTML
@@ -240,8 +315,11 @@ HTML,
 <h2>Eventos corporativos y de marca en Barcelona</h2>
 <p>He puesto música para <strong>Nespresso, Vicio, Cupra y Red Bull</strong>, entre otros, en eventos como Cupra Pulse en Barcelona. Si organizas una presentación, un lanzamiento, una cena de empresa o una fiesta de equipo, preparo la música para acompañar cada momento. <a href="/dj-eventos-corporativos/">Más información sobre eventos corporativos</a>.</p>
 
-<h2>Fiestas privadas y tardeos en Barcelona</h2>
-<p>Para celebraciones privadas y tardeos adapto la música al espacio, a la hora y a la audiencia. Pincho todo tipo de música y voy ajustando según cómo responda la pista. <a href="/dj-puestas-de-largo-fiestas-privadas/">Fiestas privadas y puestas de largo</a> · <a href="/dj-tardeos-fiestas-mayores/">Tardeos y fiestas mayores</a>.</p>
+<h2>Bodas y fiestas privadas en Barcelona</h2>
+<p>También pincho en bodas y celebraciones privadas: adapto la música al espacio, a la hora y a la audiencia, y voy ajustando según cómo responda la pista. <a href="/dj-bodas/">Bodas</a> · <a href="/dj-fiestas-privadas/">Fiestas privadas</a>.</p>
+
+<h2>También en sala</h2>
+<p>He pinchado en clubs y salas de Barcelona como Sala Apolo y Atlantic Club. <a href="/dj-clubs-y-salas/">Más información para programadores</a>.</p>
 
 <h2>Escucha cómo pincho</h2>
 <p>Mis sesiones grabadas se mueven entre house, tech house y latin house; las tienes en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>. En un evento, la música se adapta a lo que necesite la gente para bailar.</p>
@@ -320,6 +398,35 @@ function ckboo_seed_landings() {
             ],
         ], true );
         echo is_wp_error( $id ) ? "ERROR $slug: " . $id->get_error_message() . "\n" : "created $slug (ID $id)\n";
+    }
+}
+
+/**
+ * Overwrites title/excerpt/content/SEO meta of pages that already exist, for the
+ * given slugs only. Used for one-off content restructurings (never run blindly:
+ * it discards manual admin edits made to those specific pages).
+ *
+ * @param string[] $slugs
+ */
+function ckboo_resync_landings( array $slugs ) {
+    $all = ckboo_landings();
+    foreach ( $slugs as $slug ) {
+        $l    = $all[ $slug ] ?? null;
+        $page = get_page_by_path( $slug );
+        if ( ! $l || ! $page ) {
+            echo "skip  $slug (missing landing data or page)\n";
+            continue;
+        }
+        wp_update_post( [
+            'ID'           => $page->ID,
+            'post_title'   => $l['title'],
+            'post_excerpt' => $l['excerpt'],
+            'post_content' => $l['content'],
+        ] );
+        update_post_meta( $page->ID, '_wp_page_template', CKBOO_LANDING_TEMPLATE );
+        update_post_meta( $page->ID, '_ckboo_seo_title', $l['seo_title'] );
+        update_post_meta( $page->ID, '_ckboo_seo_desc', $l['seo_desc'] );
+        echo "synced $slug (ID {$page->ID})\n";
     }
 }
 

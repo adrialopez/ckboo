@@ -28,11 +28,19 @@ function ckboo_faqs() {
         ],
         [
             'q' => '¿Para qué tipo de eventos puedes pinchar?',
-            'a' => 'Para todo tipo de celebraciones: eventos corporativos, tardeos, fiestas mayores, puestas de largo, fiestas privadas como cumpleaños o aniversarios, y también bodas.',
+            'a' => 'Para todo tipo de celebraciones: bodas, eventos corporativos, fiestas privadas (cumpleaños, puestas de largo, aniversarios) y fiestas mayores. Un tardeo puede darse dentro de cualquiera de ellas.',
         ],
         [
             'q' => '¿Qué tipo de música pinchas?',
-            'a' => 'Todo tipo de música, adaptada a cada evento. Construyo la sesión según el espacio, la audiencia y el momento. Mis sesiones grabadas se mueven entre house, tech house y latin house y puedes escucharlas en Mixcloud.',
+            'a' => 'Todo tipo de música: no me caso ni con un estilo ni con una década. Construyo la sesión según el espacio, la audiencia y el momento. Mis sesiones grabadas se mueven entre house, tech house y latin house y puedes escucharlas en Mixcloud.',
+        ],
+        [
+            'q' => '¿Llevas tu propio equipo de sonido e iluminación?',
+            'a' => 'Sí, llevo sistema de sonido, iluminación y cabina de DJ propios, adaptados a cada espacio. El presupuesto se ajusta a lo que haga falta llevar.',
+        ],
+        [
+            'q' => '¿Pinchas también en clubs o salas?',
+            'a' => 'Sí, además de eventos privados y corporativos busco fechas para pinchar en clubs y salas. He pinchado en Hola Club (Sitges), Sala Apolo y Atlantic Club, ambos en Barcelona.',
         ],
         [
             'q' => '¿Cómo puedo pedir presupuesto?',
@@ -40,7 +48,7 @@ function ckboo_faqs() {
         ],
         [
             'q' => '¿De qué depende el precio?',
-            'a' => 'Depende del tipo de evento, la duración, la ubicación y las necesidades de cada celebración. Cuéntame los detalles y te preparo un presupuesto a medida.',
+            'a' => 'Depende del tipo de evento, la duración, la ubicación, el equipo que haya que llevar (sonido, iluminación, cabina) y las necesidades de cada celebración. Cuéntame los detalles y te preparo un presupuesto a medida.',
         ],
     ];
 }
@@ -287,6 +295,21 @@ add_action( 'wp_head', function () {
 /* ---------------------------------------------------------
  * XML sitemap: legal pages are noindex, keep them out
  * ------------------------------------------------------- */
+/* ---------------------------------------------------------
+ * 301s for landing pages that were renamed/split on 2026-09-22
+ * ------------------------------------------------------- */
+add_action( 'template_redirect', function () {
+    $path = isset( $_SERVER['REQUEST_URI'] ) ? rtrim( (string) wp_parse_url( $_SERVER['REQUEST_URI'], PHP_URL_PATH ), '/' ) : '';
+    $map  = [
+        '/dj-puestas-de-largo-fiestas-privadas' => '/dj-fiestas-privadas/',
+        '/dj-tardeos-fiestas-mayores'            => '/dj-fiestas-mayores/',
+    ];
+    if ( isset( $map[ $path ] ) ) {
+        wp_redirect( home_url( $map[ $path ] ), 301 );
+        exit;
+    }
+} );
+
 add_filter( 'wp_sitemaps_posts_query_args', function ( $args, $post_type ) {
     if ( 'page' === $post_type ) {
         $exclude = [];
@@ -335,6 +358,18 @@ add_action( 'template_redirect', function () {
     $out .= "## Servicios\n";
     foreach ( $landings as $l ) {
         if ( 'servicio' === $l['group'] ) {
+            $out .= '- [' . $l['title'] . '](' . $l['url'] . '): ' . $l['excerpt'] . "\n";
+        }
+    }
+    $out .= "\n## Formato\n";
+    foreach ( $landings as $l ) {
+        if ( 'formato' === $l['group'] ) {
+            $out .= '- [' . $l['title'] . '](' . $l['url'] . '): ' . $l['excerpt'] . "\n";
+        }
+    }
+    $out .= "\n## Salas y clubs\n";
+    foreach ( $landings as $l ) {
+        if ( 'profesional' === $l['group'] ) {
             $out .= '- [' . $l['title'] . '](' . $l['url'] . '): ' . $l['excerpt'] . "\n";
         }
     }
