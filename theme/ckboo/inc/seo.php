@@ -13,7 +13,7 @@ const CKBOO_EMAIL         = 'dj@ckboo.es';
 
 // Set once we have the number, e.g. '34600000000' (country code, no +, no spaces).
 // The WhatsApp icon only renders when this isn't empty.
-const CKBOO_WHATSAPP_NUMBER = '';
+const CKBOO_WHATSAPP_NUMBER = '34699464409';
 
 function ckboo_whatsapp_url() {
     return CKBOO_WHATSAPP_NUMBER ? 'https://wa.me/' . CKBOO_WHATSAPP_NUMBER : '';
