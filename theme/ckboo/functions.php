@@ -3,7 +3,7 @@
  * CkBoo — functions.php
  */
 
-define( 'CKBOO_VERSION', '1.2.4' );
+define( 'CKBOO_VERSION', '1.2.5' );
 
 /* ---------------------------------------------------------
  * Theme setup
@@ -134,3 +134,15 @@ function ckboo_get_slides() {
 
 require_once get_template_directory() . '/inc/seo.php';
 require_once get_template_directory() . '/inc/landings.php';
+
+/**
+ * Small line icons used in the header and footer social links.
+ */
+function ckboo_icon_svg( $name ) {
+    $icons = [
+        'instagram' => '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>',
+        'whatsapp'  => '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.65-4.95A9 9 0 1 1 8.4 19.6L3 21z"/><path d="M9 10.5c0 3 2.5 5.5 5.5 5.5.4 0 .8-.2.9-.6l.4-1.3c.1-.4-.1-.8-.4-1l-1.4-.8c-.3-.2-.7-.1-.9.1l-.5.6c-1-.6-1.8-1.4-2.4-2.4l.6-.5c.2-.2.3-.6.1-.9l-.8-1.4c-.2-.3-.6-.5-1-.4l-1.3.4c-.4.1-.6.5-.6.9"/></svg>',
+        'mixcloud'  => '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5z"/></svg>',
+    ];
+    return $icons[ $name ] ?? '';
+}

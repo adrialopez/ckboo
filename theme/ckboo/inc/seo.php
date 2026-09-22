@@ -11,6 +11,14 @@ const CKBOO_MIXCLOUD_URL  = 'https://www.mixcloud.com/ckboo/';
 const CKBOO_INSTAGRAM_URL = 'https://www.instagram.com/dj_ckboo/';
 const CKBOO_EMAIL         = 'dj@ckboo.es';
 
+// Set once we have the number, e.g. '34600000000' (country code, no +, no spaces).
+// The WhatsApp icon only renders when this isn't empty.
+const CKBOO_WHATSAPP_NUMBER = '';
+
+function ckboo_whatsapp_url() {
+    return CKBOO_WHATSAPP_NUMBER ? 'https://wa.me/' . CKBOO_WHATSAPP_NUMBER : '';
+}
+
 /**
  * Frequently asked questions: shown on the home page and exposed as FAQPage schema.
  *

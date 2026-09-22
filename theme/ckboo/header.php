@@ -20,7 +20,14 @@ $ck_anchor = is_front_page() ? '' : home_url( '/' );
     <a href="<?php echo esc_url( $ck_anchor . '#bio' ); ?>">Sobre mí</a>
     <a href="<?php echo esc_url( $ck_anchor . '#booking' ); ?>">Contrataciones</a>
     <a href="<?php echo esc_url( $ck_anchor . '#instagram' ); ?>">Instagram</a>
-    <a href="<?php echo esc_url( CKBOO_MIXCLOUD_URL ); ?>" target="_blank" rel="noopener">Mixcloud</a>
+
+    <div class="dj-nav-icons">
+      <a class="dj-icon-link" href="<?php echo esc_url( CKBOO_INSTAGRAM_URL ); ?>" target="_blank" rel="noopener" aria-label="Instagram"><?php echo ckboo_icon_svg( 'instagram' ); ?></a>
+      <?php if ( ckboo_whatsapp_url() ) : ?>
+        <a class="dj-icon-link" href="<?php echo esc_url( ckboo_whatsapp_url() ); ?>" target="_blank" rel="noopener" aria-label="WhatsApp"><?php echo ckboo_icon_svg( 'whatsapp' ); ?></a>
+      <?php endif; ?>
+      <a class="dj-icon-link" href="<?php echo esc_url( CKBOO_MIXCLOUD_URL ); ?>" target="_blank" rel="noopener" aria-label="Mixcloud"><?php echo ckboo_icon_svg( 'mixcloud' ); ?></a>
+    </div>
   </nav>
 
   <button class="hamburger" id="dj-hamburger" aria-label="Abrir menú" aria-expanded="false">

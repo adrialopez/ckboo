@@ -20,8 +20,11 @@
   </div>
 
   <div class="dj-footer-social">
-    <a href="<?php echo esc_url( CKBOO_MIXCLOUD_URL ); ?>" target="_blank" rel="noopener">Mixcloud</a>
-    <a href="<?php echo esc_url( CKBOO_INSTAGRAM_URL ); ?>" target="_blank" rel="noopener">Instagram</a>
+    <a href="<?php echo esc_url( CKBOO_INSTAGRAM_URL ); ?>" target="_blank" rel="noopener"><?php echo ckboo_icon_svg( 'instagram' ); ?> Instagram</a>
+    <?php if ( ckboo_whatsapp_url() ) : ?>
+      <a href="<?php echo esc_url( ckboo_whatsapp_url() ); ?>" target="_blank" rel="noopener"><?php echo ckboo_icon_svg( 'whatsapp' ); ?> WhatsApp</a>
+    <?php endif; ?>
+    <a href="<?php echo esc_url( CKBOO_MIXCLOUD_URL ); ?>" target="_blank" rel="noopener"><?php echo ckboo_icon_svg( 'mixcloud' ); ?> Mixcloud</a>
   </div>
 </footer>
 

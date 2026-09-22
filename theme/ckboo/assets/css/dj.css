@@ -63,6 +63,22 @@ body.dj-mode {
 
 .dj-nav a:hover { color: var(--yellow); }
 
+.dj-nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.dj-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-light);
+  transition: color var(--transition);
+}
+
+.dj-icon-link:hover { color: var(--yellow); }
+
 /* ============================================
    DJ HERO
    ============================================ */
@@ -614,6 +630,22 @@ body.dj-mode {
   }
 
   .dj-nav.mobile-open a:hover { color: var(--dj-accent); }
+
+  .dj-nav.mobile-open .dj-nav-icons {
+    flex-direction: row;
+    gap: 1.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .dj-nav.mobile-open .dj-nav-icons a {
+    display: flex;
+    padding: 0.75rem;
+    font-size: 0;
+    opacity: 1;
+    animation: none;
+  }
+
+  .dj-nav.mobile-open .dj-nav-icons svg { width: 26px; height: 26px; }
 
   .dj-hero h1 { font-size: 5rem; }
   .dj-bio-grid {
