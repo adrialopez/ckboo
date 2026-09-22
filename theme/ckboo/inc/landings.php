@@ -42,13 +42,13 @@ function ckboo_landings() {
 <p>Durante la cena, música tranquila que acompañe sin imponerse. Al terminar, subo la energía poco a poco hasta llenar la pista, leyendo al público según van entrando invitados de edades y gustos distintos. No sigo una lista cerrada: construyo la sesión en directo, como en cualquier otra celebración.</p>
 
 <h2>Todo tipo de música, a vuestro gusto</h2>
-<p>No me caso ni con un estilo ni con una década, así que hablamos antes de la boda de lo que os gusta, lo que no puede faltar y lo que preferís evitar. Mis sesiones grabadas se mueven entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a> para hacerte una idea de mi estilo.</p>
+<p>No tengo un estilo fijo ni una década a la que sea fiel, así que antes de la boda hablamos de lo que os gusta, lo que no puede faltar y lo que preferís evitar. Mis sesiones grabadas sí se mueven más por house, tech house y latin house — las tienes en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a> por si quieres hacerte una idea.</p>
 
 <h2>Más de 20 años en celebraciones privadas</h2>
 <p>Llevo más de 20 años poniendo música en celebraciones privadas y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar con públicos muy variados y a que un evento salga bien de principio a fin.</p>
 
 <h2>Equipo propio</h2>
-<p>Llevo mi propio equipo de sonido, iluminación y cabina de DJ, adaptado al espacio: el presupuesto se ajusta a lo que haga falta llevar.</p>
+<p>Llevo mi propia cabina siempre, y sonido e iluminación si el espacio no los tiene. El presupuesto depende de lo que haga falta llevar ese día.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
@@ -82,13 +82,13 @@ HTML,
 
 <h2>La música se adapta a cada momento</h2>
 <p>Un evento corporativo casi nunca tiene un único ritmo: hay un momento de llegada, otro de conversación y, muchas veces, un cierre más festivo. Adapto la sesión a esos momentos, al espacio y a la gente que está delante, sin lista cerrada y con el volumen y la energía que pida cada fase.</p>
-<p>No me caso ni con un estilo ni con una década: en un evento manda lo que el público necesita. Mis sesiones grabadas se mueven entre house, tech house y latin house; puedes escuchar mi estilo en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>.</p>
+<p>Ni me caso con un estilo ni con una década — en un evento manda lo que pide el público. Mis sesiones grabadas se mueven más por house, tech house y latin house; puedes escuchar mi estilo en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>.</p>
 
 <h2>Experiencia con marcas</h2>
 <p>He puesto música para <strong>Nespresso, Vicio, Cupra y Red Bull</strong>, entre otros, en eventos como Cupra Pulse en Barcelona. Trabajo con soltura en espacios y formatos muy distintos, desde un espacio de oficina hasta un evento al aire libre.</p>
 
 <h2>Equipo propio</h2>
-<p>Llevo mi propio equipo de sonido, iluminación y cabina de DJ, adaptado al espacio: el presupuesto se ajusta a lo que haga falta llevar.</p>
+<p>La cabina es siempre mía; el sonido y la iluminación, según lo que tenga ya el espacio. Por eso el presupuesto cambia de un evento a otro.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
@@ -122,13 +122,13 @@ HTML,
 <p>Pincho en cumpleaños, aniversarios y celebraciones entre amigos y familia. Sé leer a un público que puede mezclar edades y gustos, y voy cambiando de estilo según lo que necesite la pista, sin dejar nada a medias.</p>
 
 <h2>Todo tipo de música, a medida</h2>
-<p>No me caso ni con un estilo ni con una década. Mis sesiones grabadas se mueven entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>. En tu fiesta, la música la decide la gente que la disfruta.</p>
+<p>No tengo un estilo cerrado, ni tampoco una década favorita. Mis sesiones grabadas se mueven más entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>. En tu fiesta, la música la decide la gente que la disfruta.</p>
 
 <h2>Residente en Txocu</h2>
 <p>Soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar en celebraciones privadas con público muy variado.</p>
 
 <h2>Equipo propio</h2>
-<p>Llevo mi propio equipo de sonido, iluminación y cabina de DJ, adaptado al espacio: el presupuesto se ajusta a lo que haga falta llevar.</p>
+<p>Llevo cabina propia y, si hace falta, también sonido e iluminación. El presupuesto se ajusta según lo que haya que montar.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
@@ -156,13 +156,13 @@ HTML,
 <p>Muchas fiestas mayores empiezan por la tarde con un ambiente familiar y terminan de noche con la pista llena. Adapto la energía de la sesión a cada momento, sin dejar que decaiga, tanto si es un tardeo de tarde como la fiesta de después.</p>
 
 <h2>Todo tipo de música</h2>
-<p>No me caso ni con un estilo ni con una década: pincho lo que pida el momento para que la fiesta funcione, sea cual sea el público que tenga delante.</p>
+<p>Aquí menos que en ningún sitio me cierro a un estilo o una década: pincho lo que pida el momento para que la fiesta funcione, sea cual sea el público que tenga delante.</p>
 
 <h2>Más de 20 años de experiencia</h2>
 <p>Llevo más de 20 años poniendo música en celebraciones privadas y populares, y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>.</p>
 
 <h2>Equipo propio</h2>
-<p>Llevo mi propio equipo de sonido, iluminación y cabina de DJ, adaptado al espacio: el presupuesto se ajusta a lo que haga falta llevar.</p>
+<p>Aquí suelo llevar el equipo completo: sonido, iluminación y cabina, adaptado al aforo. El presupuesto varía según lo que haya que montar.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
@@ -249,7 +249,7 @@ HTML,
 </ul>
 
 <h2>La música se adapta a tu evento</h2>
-<p>No tengo un repertorio cerrado. No me caso ni con un estilo ni con una década: construyo la sesión sobre la marcha según el espacio, la hora y quién esté bailando. Mis sesiones grabadas se mueven entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>.</p>
+<p>No tengo un repertorio cerrado ni un estilo fijo: construyo la sesión sobre la marcha, según el espacio, la hora y quién esté bailando. Mis sesiones grabadas se mueven más entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>.</p>
 
 <h2>Más de 20 años de experiencia</h2>
 <p>Llevo más de 20 años poniendo música en eventos privados y celebraciones. He puesto música para marcas como Nespresso, Vicio, Cupra y Red Bull y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>.</p>
@@ -288,7 +288,7 @@ HTML,
 </ul>
 
 <h2>Música a medida, sin lista cerrada</h2>
-<p>No me caso ni con un estilo ni con una década: construyo la sesión sobre la marcha, según quién esté delante. Mis mixes se mueven entre house, tech house y latin house, y puedes escucharlos en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>. En tu evento, la música se adapta a la pista.</p>
+<p>Aquí tampoco sigo un guion: construyo la sesión sobre la marcha, según quién tenga delante. Mis mixes se mueven más entre house, tech house y latin house, y puedes escucharlos en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>. En tu evento, la música se adapta a la pista.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>

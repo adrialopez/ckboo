@@ -20,35 +20,51 @@ function ckboo_faqs() {
     return [
         [
             'q' => '¿Quién es DJ CkBoo?',
-            'a' => 'CkBoo es el nombre artístico de Adrià López, DJ con base en Terrassa y más de 20 años de experiencia poniendo música en eventos privados y corporativos. Es DJ residente para los eventos privados de Txocu y ha puesto música para marcas como Nespresso, Vicio, Cupra y Red Bull.',
+            'a' => 'Es mi nombre artístico. Me llamo Adrià López, vivo en Terrassa y llevo más de 20 años poniendo música en eventos privados y corporativos. Soy el DJ residente de Txocu y he pinchado en eventos de marcas como Nespresso, Vicio, Cupra o Red Bull.',
         ],
         [
             'q' => '¿En qué zonas trabajas?',
-            'a' => 'Trabajo en Terrassa, Sant Cugat del Vallès, Barcelona y el resto de Catalunya. Mi base está en Terrassa.',
+            'a' => 'Mi base es Terrassa, pero me muevo sin problema por Sant Cugat, Barcelona y el resto de Catalunya. Si tu evento cae fuera de esta zona, escríbeme igualmente y lo hablamos.',
         ],
         [
             'q' => '¿Para qué tipo de eventos puedes pinchar?',
-            'a' => 'Para todo tipo de celebraciones: bodas, eventos corporativos, fiestas privadas (cumpleaños, puestas de largo, aniversarios) y fiestas mayores. Un tardeo puede darse dentro de cualquiera de ellas.',
+            'a' => 'De todo: bodas, eventos de empresa, fiestas privadas (cumpleaños, puestas de largo, aniversarios...) y fiestas mayores. Un tardeo, por ejemplo, puede encajar en cualquiera de estas categorías.',
         ],
         [
-            'q' => '¿Qué tipo de música pinchas?',
-            'a' => 'Todo tipo de música: no me caso ni con un estilo ni con una década. Construyo la sesión según el espacio, la audiencia y el momento. Mis sesiones grabadas se mueven entre house, tech house y latin house y puedes escucharlas en Mixcloud.',
+            'q' => '¿Qué estilo de música pones en los eventos?',
+            'a' => 'No me cierro a un estilo ni a una década. En un evento leo la sala y voy construyendo la sesión según quién esté delante — lo que importa es que la gente lo pase bien, no seguir una lista cerrada. Mis sesiones grabadas sí se mueven más por house, tech house y latin house; las tienes en Mixcloud si quieres hacerte una idea de cómo sesiono.',
         ],
         [
-            'q' => '¿Llevas tu propio equipo de sonido e iluminación?',
-            'a' => 'Sí, llevo sistema de sonido, iluminación y cabina de DJ propios, adaptados a cada espacio. El presupuesto se ajusta a lo que haga falta llevar.',
+            'q' => '¿Haces también de speaker o animación por micrófono?',
+            'a' => 'No, mi trabajo es la mezcla y llevar el ritmo de la sesión, no la animación por micro. Si el evento necesita algún anuncio puntual (el brindis, la entrada de los novios...) lo hago encantado, pero no ofrezco animación como tal.',
+        ],
+        [
+            'q' => '¿Traes tu propio equipo de sonido e iluminación?',
+            'a' => 'La cabina siempre es mía. El sonido y la iluminación dependen del espacio: si el lugar ya tiene equipo instalado lo aprovechamos, y si no, lo llevo yo mismo, adaptado al aforo. Por eso el presupuesto varía según lo que haga falta llevar.',
+        ],
+        [
+            'q' => '¿Con cuánta antelación llegas al evento?',
+            'a' => 'Normalmente entre una y dos horas antes de que lleguen los primeros invitados, para montar con calma, probar el sonido y no tener sorpresas de última hora.',
+        ],
+        [
+            'q' => '¿Puedo pasarte una lista de canciones que no pueden faltar?',
+            'a' => 'Sí, y me ayuda bastante. Una playlist de Spotify con lo que no puede faltar — y lo que prefieres evitar — es más que suficiente. Yo me encargo de encajarlo en la sesión de forma que fluya.',
+        ],
+        [
+            'q' => '¿Y si el evento se alarga más de lo previsto?',
+            'a' => 'Si la pista sigue llena y el espacio lo permite, se puede alargar sin problema. El precio de las horas extra lo dejamos cerrado de antemano en el presupuesto, así no hay sorpresas esa noche.',
         ],
         [
             'q' => '¿Pinchas también en clubs o salas?',
-            'a' => 'Sí, además de eventos privados y corporativos busco fechas para pinchar en clubs y salas. He pinchado en Hola Club (Sitges), Sala Apolo y Atlantic Club, ambos en Barcelona.',
+            'a' => 'Sí, aparte de eventos privados y corporativos, busco fechas para pinchar en sala. He pinchado en Hola Club (Sitges), Sala Apolo y Atlantic Club, en Barcelona.',
         ],
         [
-            'q' => '¿Cómo puedo pedir presupuesto?',
-            'a' => 'Rellena el formulario de contratación de esta web o escríbeme a ' . CKBOO_EMAIL . ' con el tipo de evento, la fecha aproximada y el lugar. Te respondo con disponibilidad y presupuesto.',
+            'q' => '¿Cómo pido presupuesto?',
+            'a' => 'Lo más rápido es el formulario de esta web, o me escribes directamente a ' . CKBOO_EMAIL . '. Cuéntame el tipo de evento, la fecha aproximada y dónde es, y te respondo con disponibilidad y presupuesto.',
         ],
         [
             'q' => '¿De qué depende el precio?',
-            'a' => 'Depende del tipo de evento, la duración, la ubicación, el equipo que haya que llevar (sonido, iluminación, cabina) y las necesidades de cada celebración. Cuéntame los detalles y te preparo un presupuesto a medida.',
+            'a' => 'Del tipo de evento, las horas, la ubicación y el equipo que haga falta llevar. No hay una tarifa única porque cada celebración es distinta — cuéntame la tuya y te preparo un presupuesto ajustado.',
         ],
     ];
 }

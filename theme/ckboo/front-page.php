@@ -37,7 +37,7 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
   </h1>
 
   <p class="dj-hero-sub">
-    DJ para eventos privados y corporativos: adapto la música al momento, al espacio y a la gente.
+    Pincho en bodas, eventos de empresa y fiestas privadas, adaptando la música al momento y a la gente que tengo delante.
   </p>
 
   <div class="dj-hero-cta">
@@ -63,7 +63,7 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
     <p class="section-label">Servicios</p>
     <h2>DJ para cada tipo de evento</h2>
     <p class="section-intro">
-      Soy CkBoo (Adrià López), DJ con base en Terrassa y más de 20 años de experiencia en eventos privados y corporativos en Terrassa, Sant Cugat, Barcelona y el resto de Catalunya. Pincho todo tipo de música y adapto cada sesión al espacio, al público y al momento.
+      Soy CkBoo (Adrià López), DJ desde hace más de 20 años. Trabajo sobre todo en Terrassa, Sant Cugat, Barcelona y el resto de Catalunya, y cada sesión la monto distinta según el espacio, quién vaya a estar y qué tipo de evento sea.
     </p>
     <div class="service-cards">
       <?php foreach ( $landings as $slug => $l ) : if ( 'servicio' !== $l['group'] ) { continue; } ?>
@@ -87,20 +87,20 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
     <p class="section-label">Equipo</p>
     <h2>Equipo propio, para cada evento</h2>
     <p class="section-intro">
-      Llevo mi propio equipo a cada evento: sistema de sonido, iluminación y cabina de DJ. Lo adapto al espacio y al tipo de celebración, así que el presupuesto se ajusta según lo que haya que llevar — desde una sesión sencilla hasta el montaje completo.
+      La cabina siempre es mía. Si el espacio no tiene sonido o iluminación propios, los llevo yo también, así que lo que necesitas montar cambia de un evento a otro — y el presupuesto se ajusta a eso.
     </p>
     <div class="equipment-cards">
       <div class="equipment-card fade-up">
         <h3>Sonido</h3>
-        <p>Equipo profesional, dimensionado al espacio y al número de invitados.</p>
+        <p>Lo dimensiono según el espacio y cuánta gente vaya a haber.</p>
       </div>
       <div class="equipment-card fade-up">
         <h3>Iluminación</h3>
-        <p>Acompaña la sesión y crea ambiente, del cóctel a la pista de baile.</p>
+        <p>Cambia el ambiente de la sala, del cóctel a la pista llena.</p>
       </div>
       <div class="equipment-card fade-up">
         <h3>Cabina de DJ</h3>
-        <p>Lista para pinchar en cualquier espacio, interior o exterior.</p>
+        <p>La mía, siempre. Lista para interior o exterior.</p>
       </div>
     </div>
   </div>
@@ -115,7 +115,7 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
     <p class="section-label">Música</p>
     <h2 style="font-size:clamp(2rem,4vw,3rem);">Sets y mixes</h2>
     <p style="color:var(--gray);margin-top:0.75rem;margin-bottom:1.5rem;max-width:480px;">
-      Mis sesiones grabadas en Mixcloud se mueven entre house, tech house y latin house — es el terreno donde más disfruto grabando, sin setlist ni guion.
+      Grabando, sin nadie delante a quien leer, es donde más experimento: sobre todo house, tech house y latin house, sin setlist ni guion. Lo tienes todo en Mixcloud.
     </p>
 
     <div class="dj-genres fade-up" style="margin-bottom:2.5rem;">
@@ -191,8 +191,8 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
         <p class="section-label">Sobre CkBoo</p>
         <h2>Detrás de los <em>platos</em>.</h2>
 
-        <p class="fade-up">Llevo más de 20 años poniendo música en eventos privados y celebraciones. Nací en Barcelona y crecí entre clubs electrónicos y tiendas de discos — la música siempre ha sido la constante.</p>
-        <p class="fade-up">En los platos manda la sensación: leo la sala y construyo la sesión en tiempo real, sin dejar nada a medias. Me adapto siempre al espacio, la audiencia y el momento, ya sea una fiesta privada, un evento corporativo o una noche de club.</p>
+        <p class="fade-up">Llevo más de 20 años poniendo música en fiestas y eventos. Nací en Barcelona y crecí entre clubs y tiendas de discos — la música ha sido lo único que no ha cambiado desde entonces.</p>
+        <p class="fade-up">En los platos mando yo por sensaciones: leo la sala y voy construyendo sobre la marcha, sin dejar nada a medias. Da igual si es una fiesta privada, un evento de empresa o una noche de club — me adapto al momento.</p>
         <p class="fade-up">En directo no me caso ni con un estilo ni con una década: pincho lo que haga falta para llenar la pista. En cualquier tipo de celebración —bodas, eventos corporativos, fiestas privadas o fiestas mayores— construyo la sesión sobre la marcha según quién esté delante, mezclando lo que sea necesario para que la gente no pare de bailar.</p>
         <p class="fade-up" style="display:flex;align-items:center;gap:0.75rem;">
           <img src="<?php echo esc_url( $img . 'txocu-logo-white.png' ); ?>" alt="Txocu" width="32" height="32" loading="lazy" style="width:32px;height:32px;opacity:0.85;flex-shrink:0;" />
@@ -229,7 +229,7 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
     <p class="section-label">Zonas</p>
     <h2>Dónde trabajo</h2>
     <p class="section-intro">
-      Mi base está en Terrassa y me muevo por el Vallès, Barcelona y el resto de Catalunya.
+      Vivo en Terrassa, y desde ahí me muevo por el Vallès, Barcelona y el resto de Catalunya.
     </p>
     <div class="link-cards">
       <?php foreach ( $landings as $slug => $l ) : if ( 'zona' !== $l['group'] ) { continue; } ?>
