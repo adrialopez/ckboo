@@ -85,22 +85,22 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
 <section class="dj-equipment" id="equipo">
   <div class="container">
     <p class="section-label">Equipo</p>
-    <h2>Equipo propio, para cada evento</h2>
+    <h2>Solo yo, o yo con el equipo completo</h2>
     <p class="section-intro">
-      La cabina siempre es mía. Si el espacio no tiene sonido o iluminación propios, los llevo yo también, así que lo que necesitas montar cambia de un evento a otro — y el presupuesto se ajusta a eso.
+      Depende del sitio. Si contratas para un club o una sala que ya tiene cabina, sonido e iluminación, vengo solo a pinchar. Si el espacio no tiene nada de eso, lo llevo yo — cabina, sonido e iluminación — y ahí es donde cambia el presupuesto de un evento a otro.
     </p>
     <div class="equipment-cards">
       <div class="equipment-card fade-up">
         <h3>Sonido</h3>
-        <p>Lo dimensiono según el espacio y cuánta gente vaya a haber.</p>
+        <p>Si no lo tiene el espacio, lo llevo yo, dimensionado a la gente que vaya a haber.</p>
       </div>
       <div class="equipment-card fade-up">
         <h3>Iluminación</h3>
-        <p>Cambia el ambiente de la sala, del cóctel a la pista llena.</p>
+        <p>Igual: la aporto cuando hace falta, para dar ambiente a la sesión.</p>
       </div>
       <div class="equipment-card fade-up">
         <h3>Cabina de DJ</h3>
-        <p>La mía, siempre. Lista para interior o exterior.</p>
+        <p>En clubs y salas suele haber. Si no, llevo la mía.</p>
       </div>
     </div>
   </div>

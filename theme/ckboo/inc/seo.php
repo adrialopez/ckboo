@@ -40,7 +40,7 @@ function ckboo_faqs() {
         ],
         [
             'q' => '¿Traes tu propio equipo de sonido e iluminación?',
-            'a' => 'La cabina siempre es mía. El sonido y la iluminación dependen del espacio: si el lugar ya tiene equipo instalado lo aprovechamos, y si no, lo llevo yo mismo, adaptado al aforo. Por eso el presupuesto varía según lo que haga falta llevar.',
+            'a' => 'Depende del sitio. Si contratas para un club o una sala que ya tiene cabina, sonido e iluminación, vengo solo a pinchar — no hace falta que lleve nada. Si el espacio no tiene equipo, lo llevo yo, adaptado al aforo. Lo hablamos según dónde sea tu evento, y de ahí sale el presupuesto.',
         ],
         [
             'q' => '¿Con cuánta antelación llegas al evento?',
