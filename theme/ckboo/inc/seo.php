@@ -28,7 +28,11 @@ function ckboo_faqs() {
         ],
         [
             'q' => '¿Para qué tipo de eventos puedes pinchar?',
-            'a' => 'De todo: bodas, eventos de empresa, fiestas privadas (cumpleaños, puestas de largo, aniversarios...) y fiestas mayores. Un tardeo, por ejemplo, puede encajar en cualquiera de estas categorías.',
+            'a' => 'De todo: bodas, eventos de empresa, fiestas privadas (cumpleaños, puestas de largo, aniversarios...) y fiestas mayores.',
+        ],
+        [
+            'q' => '¿Puedo contratarte para un tardeo?',
+            'a' => 'Sí, y ahora mismo es de los formatos que mejor funcionan. Te lo monto entero: música, sonido, iluminación y cabina si hace falta. Dime el espacio y la hora que tienes en mente y lo organizamos.',
         ],
         [
             'q' => '¿Qué estilo de música pones en los eventos?',
