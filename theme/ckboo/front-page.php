@@ -95,42 +95,6 @@ foreach ( $marquee_items as $item ) {
 
 
 <!-- ======================================================
-     EQUIPO PROPIO
-     ====================================================== -->
-<section class="dj-equipment" id="equipo">
-  <div class="container">
-    <p class="section-label">Equipo</p>
-    <h2>Equipo técnico</h2>
-    <p class="section-intro">
-      El equipo lo personalizo según el tipo de evento: no es lo mismo la megafonía de un brindis que la potencia que pide una pista llena. Si el espacio ya tiene sonido, iluminación o cabina, los aprovecho; si no, los llevo yo, adaptados a lo que pida cada momento — y de ahí sale el presupuesto.
-    </p>
-    <div class="equipment-cards">
-      <div class="equipment-card fade-up">
-        <h3>Sonido</h3>
-        <p>Claro para discursos y brindis, con la potencia que hace falta cuando se llena la pista.</p>
-      </div>
-      <div class="equipment-card fade-up">
-        <h3>Iluminación</h3>
-        <p>Ambiente suave para la cena, efectos de fiesta cuando toca bailar.</p>
-      </div>
-      <div class="equipment-card fade-up">
-        <h3>Cabina de DJ</h3>
-        <p>En salas y clubs suele haberla. Si no, pongo la mía.</p>
-      </div>
-    </div>
-    <ul class="equipment-checklist fade-up">
-      <li>DJ profesional</li>
-      <li>Cabina de DJ</li>
-      <li>Equipo de sonido</li>
-      <li>Iluminación</li>
-      <li>Micrófono para anuncios</li>
-      <li>Montaje y desmontaje</li>
-    </ul>
-  </div>
-</section>
-
-
-<!-- ======================================================
      BIO
      ====================================================== -->
 <section class="dj-bio" id="bio">
@@ -230,7 +194,7 @@ foreach ( $marquee_items as $item ) {
 
 
 <!-- ======================================================
-     ZONAS + FAQ
+     ZONAS
      ====================================================== -->
 <?php if ( $landings ) : ?>
 <section class="dj-areas" id="zonas">
@@ -255,6 +219,49 @@ foreach ( $marquee_items as $item ) {
   </div>
 </section>
 <?php endif; ?>
+
+
+<!-- ======================================================
+     EQUIPO PROPIO
+     ====================================================== -->
+<section class="dj-equipment" id="equipo">
+  <div class="container">
+    <p class="section-label">Equipo</p>
+    <h2>Equipo técnico</h2>
+    <p class="section-intro">
+      El equipo lo personalizo según el tipo de evento: no es lo mismo la megafonía de un brindis que la potencia que pide una pista llena. Si el espacio ya tiene sonido, iluminación o cabina, los aprovecho; si no, los llevo yo, adaptados a lo que pida cada momento — y de ahí sale el presupuesto.
+    </p>
+    <div class="equipment-cards">
+      <div class="equipment-card fade-up">
+        <h3>Sonido</h3>
+        <p>Claro para discursos y brindis, con la potencia que hace falta cuando se llena la pista.</p>
+      </div>
+      <div class="equipment-card fade-up">
+        <h3>Iluminación</h3>
+        <p>Ambiente suave para la cena, efectos de fiesta cuando toca bailar.</p>
+      </div>
+      <div class="equipment-card fade-up">
+        <h3>Cabina de DJ</h3>
+        <p>En salas y clubs suele haberla. Si no, pongo la mía.</p>
+      </div>
+    </div>
+    <ul class="equipment-checklist fade-up">
+      <li>DJ profesional</li>
+      <li>Cabina de DJ</li>
+      <li>Equipo de sonido</li>
+      <li>Iluminación</li>
+      <li>Micrófono para anuncios</li>
+      <li>Montaje y desmontaje</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ======================================================
+     BOOKING
+     ====================================================== -->
+<?php get_template_part( 'template-parts/booking' ); ?>
+
 
 <!-- ======================================================
      MIXES — Mixcloud embed
@@ -303,28 +310,6 @@ foreach ( $marquee_items as $item ) {
 </section>
 
 
-<section class="dj-faq" id="faq">
-  <div class="container">
-    <p class="section-label">Preguntas frecuentes</p>
-    <h2>Todo lo que suelen preguntarme</h2>
-    <div class="faq-list">
-      <?php foreach ( ckboo_faqs() as $faq ) : ?>
-        <details class="faq-item">
-          <summary><?php echo esc_html( $faq['q'] ); ?></summary>
-          <p><?php echo esc_html( $faq['a'] ); ?></p>
-        </details>
-      <?php endforeach; ?>
-    </div>
-  </div>
-</section>
-
-
-<!-- ======================================================
-     BOOKING
-     ====================================================== -->
-<?php get_template_part( 'template-parts/booking' ); ?>
-
-
 <!-- ======================================================
      INSTAGRAM
      ====================================================== -->
@@ -358,6 +343,25 @@ foreach ( $marquee_items as $item ) {
       </a>
     </div>
 
+  </div>
+</section>
+
+
+<!-- ======================================================
+     FAQ
+     ====================================================== -->
+<section class="dj-faq" id="faq">
+  <div class="container">
+    <p class="section-label">Preguntas frecuentes</p>
+    <h2>Todo lo que suelen preguntarme</h2>
+    <div class="faq-list">
+      <?php foreach ( ckboo_faqs() as $faq ) : ?>
+        <details class="faq-item">
+          <summary><?php echo esc_html( $faq['q'] ); ?></summary>
+          <p><?php echo esc_html( $faq['a'] ); ?></p>
+        </details>
+      <?php endforeach; ?>
+    </div>
   </div>
 </section>
 
