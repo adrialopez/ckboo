@@ -48,7 +48,7 @@ function ckboo_landings() {
 <p>Llevo más de 25 años poniendo música en celebraciones privadas y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar con públicos muy variados y a que un evento salga bien de principio a fin.</p>
 
 <h2>Equipo propio</h2>
-<p>Puedes contratarme solo para pinchar, o con el equipo completo. Si el espacio ya tiene cabina, sonido o iluminación, los aprovechamos; si no, los llevo yo. Depende del sitio, y de ahí sale el presupuesto.</p>
+<p>En una boda ajusto el sonido a cada momento: discreto en la ceremonia y el convite, con más potencia e iluminación de fiesta cuando se abre la pista. Puedes contratarme solo para pinchar, o con el equipo completo, según lo que ya tenga el espacio. Lo hablamos, y de ahí sale el presupuesto.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
@@ -88,7 +88,7 @@ HTML,
 <p>He puesto música para <strong>Nespresso, Vicio, Cupra y Red Bull</strong>, entre otros, en eventos como Cupra Pulse en Barcelona. Trabajo con soltura en espacios y formatos muy distintos, desde un espacio de oficina hasta un evento al aire libre.</p>
 
 <h2>Equipo propio</h2>
-<p>En espacios que ya tienen equipo propio, vengo solo a pinchar. Si no lo tienen, llevo cabina, sonido e iluminación. Lo vemos juntos antes de cerrar el presupuesto.</p>
+<p>En un evento de empresa el sonido tiene que ser nítido para presentaciones y discursos, y dar paso a la fiesta después si la hay. En espacios que ya tienen equipo propio, vengo solo a pinchar; si no lo tienen, llevo cabina, sonido e iluminación. Lo vemos juntos antes de cerrar el presupuesto.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
@@ -128,7 +128,7 @@ HTML,
 <p>Soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar en celebraciones privadas con público muy variado.</p>
 
 <h2>Equipo propio</h2>
-<p>Si el local ya tiene cabina y sonido, vengo solo a pinchar. Si no, llevo yo el equipo —cabina, sonido e iluminación— y el presupuesto se ajusta a lo que haga falta montar.</p>
+<p>Si el local ya tiene cabina y sonido, vengo solo a pinchar. Si no, llevo yo el equipo —cabina, sonido e iluminación—, adaptado al espacio, sea un jardín, una terraza o un local cerrado. El presupuesto se ajusta a lo que haga falta montar.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
@@ -162,7 +162,7 @@ HTML,
 <p>Llevo más de 25 años poniendo música en celebraciones privadas y populares, y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>.</p>
 
 <h2>Equipo propio</h2>
-<p>Si el escenario ya cuenta con sonido, iluminación y cabina, vengo solo a pinchar. Si hay que montarlo desde cero, lo llevo yo, adaptado al aforo. El presupuesto varía según lo que haga falta.</p>
+<p>Una fiesta mayor suele pedir más potencia, por el aforo y por ser muchas veces al aire libre. Si el escenario ya cuenta con sonido, iluminación y cabina, vengo solo a pinchar; si hay que montarlo desde cero, lo llevo yo, adaptado al aforo. El presupuesto varía según lo que haga falta.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>

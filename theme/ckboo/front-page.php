@@ -102,16 +102,16 @@ foreach ( $marquee_items as $item ) {
     <p class="section-label">Equipo</p>
     <h2>Equipo técnico</h2>
     <p class="section-intro">
-      En cada evento reviso qué hace falta. Si el espacio ya tiene sonido, iluminación o cabina, los aprovechamos; si no, los llevo yo, adaptados al aforo. Por eso puedes contratar solo la sesión o el equipo completo — lo hablamos según el sitio, y de ahí sale el presupuesto.
+      El equipo lo personalizo según el tipo de evento: no es lo mismo la megafonía de un brindis que la potencia que pide una pista llena. Si el espacio ya tiene sonido, iluminación o cabina, los aprovecho; si no, los llevo yo, adaptados a lo que pida cada momento — y de ahí sale el presupuesto.
     </p>
     <div class="equipment-cards">
       <div class="equipment-card fade-up">
         <h3>Sonido</h3>
-        <p>Si el espacio no lo tiene, lo llevo yo, ajustado al aforo.</p>
+        <p>Claro para discursos y brindis, con la potencia que hace falta cuando se llena la pista.</p>
       </div>
       <div class="equipment-card fade-up">
         <h3>Iluminación</h3>
-        <p>Aporta ambiente a la sesión, del cóctel a la pista llena.</p>
+        <p>Ambiente suave para la cena, efectos de fiesta cuando toca bailar.</p>
       </div>
       <div class="equipment-card fade-up">
         <h3>Cabina de DJ</h3>
