@@ -25,36 +25,42 @@ function ckboo_landings() {
 
     return [
 
-        'dj-bodas' => [
+        'dj-fiestas-privadas' => [
             'group'     => 'servicio',
-            'nav'       => 'Bodas',
-            'title'     => 'DJ para bodas',
+            'nav'       => 'Fiestas privadas',
+            'title'     => 'DJ para fiestas privadas',
             'label'     => 'Servicio',
-            'seo_title' => 'DJ para bodas en Terrassa, Sant Cugat y Barcelona | CkBoo',
-            'seo_desc'  => 'DJ para bodas en Terrassa, Sant Cugat, Barcelona y Catalunya. Música adaptada a cada momento del convite y la fiesta. Pide presupuesto a CkBoo.',
+            'seo_title' => 'DJ para fiestas privadas en Terrassa y Catalunya | CkBoo',
+            'seo_desc'  => 'DJ para todo tipo de celebraciones privadas: cumpleaños, puestas de largo y aniversarios en Terrassa, Sant Cugat, Barcelona y Catalunya. Pide presupuesto.',
             'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
-            'excerpt'   => 'En una boda pincho de la cena al baile, sin dejar que la energía decaiga. Adapto la sesión a cada momento del convite y a los gustos de los novios y sus invitados — llevo más de 25 años haciendo esto.',
+            'excerpt'   => 'Cumpleaños, puestas de largo, aniversarios o cualquier motivo para celebrar por todo lo alto: preparo una sesión personalizada, adaptada a las personas, al espacio y al ambiente que quieres crear.',
             'content'   => <<<HTML
-<h2>Música para cada momento de la boda</h2>
-<p>Una boda no es una única fiesta, son varias seguidas: la recepción, el convite, el baile de los novios y la fiesta que sigue después. Cada momento pide un tipo de música distinto, y preparo la sesión escuchando antes qué imagináis los novios para cada uno de ellos.</p>
+<h2>Una fiesta privada con la música que te representa</h2>
+<p>Las celebraciones privadas son las que más se recuerdan, y la música tiene mucho que ver con ello. En lugar de aplicar una fórmula, preparo cada fiesta escuchando antes cómo es la celebración, quién va a estar y qué ambiente quieres conseguir.</p>
 
-<h2>De la cena al baile</h2>
-<p>Durante la cena, música tranquila que acompañe sin imponerse. Al terminar, subo la energía poco a poco hasta llenar la pista, leyendo al público según van entrando invitados de edades y gustos distintos. No sigo una lista cerrada: construyo la sesión en directo, como en cualquier otra celebración.</p>
+<h2>Todo tipo de celebraciones</h2>
+<p>Cumpleaños, puestas de largo, aniversarios o cualquier otro motivo para celebrar: pincho en todo tipo de fiestas privadas. Cada una tiene su propio ritmo, y preparo la sesión según cómo quieras que se sienta la tuya.</p>
 
-<h2>Todo tipo de música, a vuestro gusto</h2>
-<p>No tengo un estilo fijo ni una década a la que sea fiel, así que antes de la boda hablamos de lo que os gusta, lo que no puede faltar y lo que preferís evitar. Mis sesiones grabadas sí se mueven más por house, tech house y latin house — las tienes en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a> por si quieres hacerte una idea.</p>
+<h2>Puestas de largo</h2>
+<p>Una puesta de largo es una celebración especial con momentos importantes a lo largo de la noche. Hablamos de cómo quieres que suene cada uno de ellos y de qué música esperáis los invitados, y después construyo una sesión que acompañe toda la fiesta, desde el inicio más tranquilo hasta la pista de baile.</p>
 
-<h2>Más de 25 años en celebraciones privadas</h2>
-<p>Llevo más de 25 años poniendo música en celebraciones privadas y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar con públicos muy variados y a que un evento salga bien de principio a fin.</p>
+<h2>Cumpleaños y aniversarios</h2>
+<p>Pincho en cumpleaños, aniversarios y celebraciones entre amigos y familia. Sé leer a un público que puede mezclar edades y gustos, y voy cambiando de estilo según lo que necesite la pista, sin dejar nada a medias.</p>
+
+<h2>Todo tipo de música, a medida</h2>
+<p>No tengo un estilo cerrado, ni tampoco una década favorita. Mis sesiones grabadas se mueven más entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>. En tu fiesta, la música la decide la gente que la disfruta.</p>
+
+<h2>Residente en Txocu</h2>
+<p>Soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar en celebraciones privadas con público muy variado.</p>
 
 <h2>Equipo propio</h2>
-<p>En una boda ajusto el sonido a cada momento: discreto en la ceremonia y el convite, con más potencia e iluminación de fiesta cuando se abre la pista. Puedes contratarme solo para pinchar, o con el equipo completo, según lo que ya tenga el espacio. Lo hablamos, y de ahí sale el presupuesto.</p>
+<p>Si el local ya tiene cabina y sonido, vengo solo a pinchar. Si no, llevo yo el equipo —cabina, sonido e iluminación—, adaptado al espacio, sea un jardín, una terraza o un local cerrado. El presupuesto se ajusta a lo que haga falta montar.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
-<li>Cuéntame en el formulario la fecha de la boda, el lugar y cómo os la imagináis.</li>
+<li>Cuéntame en el formulario qué vas a celebrar, la fecha aproximada y dónde será.</li>
 <li>Te respondo con disponibilidad y presupuesto.</li>
-<li>Preparamos juntos la música para cada momento del día.</li>
+<li>Afinamos juntos la música para que sea justo lo que imaginas.</li>
 </ol>
 HTML,
         ],
@@ -99,42 +105,36 @@ HTML,
 HTML,
         ],
 
-        'dj-fiestas-privadas' => [
+        'dj-bodas' => [
             'group'     => 'servicio',
-            'nav'       => 'Fiestas privadas',
-            'title'     => 'DJ para fiestas privadas',
+            'nav'       => 'Bodas',
+            'title'     => 'DJ para bodas',
             'label'     => 'Servicio',
-            'seo_title' => 'DJ para fiestas privadas en Terrassa y Catalunya | CkBoo',
-            'seo_desc'  => 'DJ para todo tipo de celebraciones privadas: cumpleaños, puestas de largo y aniversarios en Terrassa, Sant Cugat, Barcelona y Catalunya. Pide presupuesto.',
+            'seo_title' => 'DJ para bodas en Terrassa, Sant Cugat y Barcelona | CkBoo',
+            'seo_desc'  => 'DJ para bodas en Terrassa, Sant Cugat, Barcelona y Catalunya. Música adaptada a cada momento del convite y la fiesta. Pide presupuesto a CkBoo.',
             'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
-            'excerpt'   => 'Cumpleaños, puestas de largo, aniversarios o cualquier motivo para celebrar por todo lo alto: preparo una sesión personalizada, adaptada a las personas, al espacio y al ambiente que quieres crear.',
+            'excerpt'   => 'En una boda pincho de la cena al baile, sin dejar que la energía decaiga. Adapto la sesión a cada momento del convite y a los gustos de los novios y sus invitados — llevo más de 25 años haciendo esto.',
             'content'   => <<<HTML
-<h2>Una fiesta privada con la música que te representa</h2>
-<p>Las celebraciones privadas son las que más se recuerdan, y la música tiene mucho que ver con ello. En lugar de aplicar una fórmula, preparo cada fiesta escuchando antes cómo es la celebración, quién va a estar y qué ambiente quieres conseguir.</p>
+<h2>Música para cada momento de la boda</h2>
+<p>Una boda no es una única fiesta, son varias seguidas: la recepción, el convite, el baile de los novios y la fiesta que sigue después. Cada momento pide un tipo de música distinto, y preparo la sesión escuchando antes qué imagináis los novios para cada uno de ellos.</p>
 
-<h2>Todo tipo de celebraciones</h2>
-<p>Cumpleaños, puestas de largo, aniversarios o cualquier otro motivo para celebrar: pincho en todo tipo de fiestas privadas. Cada una tiene su propio ritmo, y preparo la sesión según cómo quieras que se sienta la tuya.</p>
+<h2>De la cena al baile</h2>
+<p>Durante la cena, música tranquila que acompañe sin imponerse. Al terminar, subo la energía poco a poco hasta llenar la pista, leyendo al público según van entrando invitados de edades y gustos distintos. No sigo una lista cerrada: construyo la sesión en directo, como en cualquier otra celebración.</p>
 
-<h2>Puestas de largo</h2>
-<p>Una puesta de largo es una celebración especial con momentos importantes a lo largo de la noche. Hablamos de cómo quieres que suene cada uno de ellos y de qué música esperáis los invitados, y después construyo una sesión que acompañe toda la fiesta, desde el inicio más tranquilo hasta la pista de baile.</p>
+<h2>Todo tipo de música, a vuestro gusto</h2>
+<p>No tengo un estilo fijo ni una década a la que sea fiel, así que antes de la boda hablamos de lo que os gusta, lo que no puede faltar y lo que preferís evitar. Mis sesiones grabadas sí se mueven más por house, tech house y latin house — las tienes en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a> por si quieres hacerte una idea.</p>
 
-<h2>Cumpleaños y aniversarios</h2>
-<p>Pincho en cumpleaños, aniversarios y celebraciones entre amigos y familia. Sé leer a un público que puede mezclar edades y gustos, y voy cambiando de estilo según lo que necesite la pista, sin dejar nada a medias.</p>
-
-<h2>Todo tipo de música, a medida</h2>
-<p>No tengo un estilo cerrado, ni tampoco una década favorita. Mis sesiones grabadas se mueven más entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>. En tu fiesta, la música la decide la gente que la disfruta.</p>
-
-<h2>Residente en Txocu</h2>
-<p>Soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar en celebraciones privadas con público muy variado.</p>
+<h2>Más de 25 años en celebraciones privadas</h2>
+<p>Llevo más de 25 años poniendo música en celebraciones privadas y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar con públicos muy variados y a que un evento salga bien de principio a fin.</p>
 
 <h2>Equipo propio</h2>
-<p>Si el local ya tiene cabina y sonido, vengo solo a pinchar. Si no, llevo yo el equipo —cabina, sonido e iluminación—, adaptado al espacio, sea un jardín, una terraza o un local cerrado. El presupuesto se ajusta a lo que haga falta montar.</p>
+<p>En una boda ajusto el sonido a cada momento: discreto en la ceremonia y el convite, con más potencia e iluminación de fiesta cuando se abre la pista. Puedes contratarme solo para pinchar, o con el equipo completo, según lo que ya tenga el espacio. Lo hablamos, y de ahí sale el presupuesto.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
-<li>Cuéntame en el formulario qué vas a celebrar, la fecha aproximada y dónde será.</li>
+<li>Cuéntame en el formulario la fecha de la boda, el lugar y cómo os la imagináis.</li>
 <li>Te respondo con disponibilidad y presupuesto.</li>
-<li>Afinamos juntos la música para que sea justo lo que imaginas.</li>
+<li>Preparamos juntos la música para cada momento del día.</li>
 </ol>
 HTML,
         ],
