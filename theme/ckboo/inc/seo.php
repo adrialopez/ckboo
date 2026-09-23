@@ -4,7 +4,7 @@
  * robots.txt rules for search and AI crawlers, and /llms.txt.
  */
 
-const CKBOO_SEO_TITLE = 'DJ CkBoo | Eventos privados y corporativos en Terrassa';
+const CKBOO_SEO_TITLE = 'DJ CkBoo | Eventos privados y corporativos en Terrassa y Sant Cugat';
 const CKBOO_SEO_DESC  = 'CkBoo, DJ en Terrassa, Sant Cugat y Barcelona. +25 años adaptando la música a cada evento privado y corporativo. Escucha mis mixes y contrátame.';
 
 const CKBOO_MIXCLOUD_URL  = 'https://www.mixcloud.com/ckboo/';

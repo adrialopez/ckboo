@@ -254,7 +254,7 @@ foreach ( $marquee_items as $item ) {
       <li>Cabina Pioneer DJ / AlphaTheta</li>
       <li>Sistema de sonido de alta fidelidad</li>
       <li>Iluminación y efectos de pista</li>
-      <li>Micrófono inalámbrico</li>
+      <li>Micrófono</li>
       <li>Montaje, prueba de sonido y desmontaje</li>
     </ul>
   </div>
