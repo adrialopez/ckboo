@@ -54,6 +54,21 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
 
 
 <!-- ======================================================
+     MARQUEE
+     ====================================================== -->
+<?php
+$marquee_items = [ 'BODAS', 'EVENTOS CORPORATIVOS', 'FIESTAS PRIVADAS', 'FIESTAS MAYORES', 'TARDEOS', 'CLUBS Y SALAS' ];
+$marquee_html  = '';
+foreach ( $marquee_items as $item ) {
+    $marquee_html .= '<span>' . esc_html( $item ) . '</span><span class="dj-marquee-dot">·</span>';
+}
+?>
+<div class="dj-marquee" aria-hidden="true">
+  <div class="dj-marquee-track"><?php echo $marquee_html . $marquee_html; ?></div>
+</div>
+
+
+<!-- ======================================================
      SERVICIOS
      ====================================================== -->
 <?php $landings = ckboo_live_landings(); ?>
@@ -229,6 +244,13 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
   <div class="container">
     <p class="section-label">Reseñas</p>
     <h2>Lo que dicen de mí</h2>
+    <div class="dj-stats fade-up">
+      <span><strong>+200</strong> eventos</span>
+      <span class="dj-stats-dot">·</span>
+      <span><strong>5,0</strong> ★ en Google</span>
+      <span class="dj-stats-dot">·</span>
+      <span><strong>+20</strong> años de experiencia</span>
+    </div>
     <div class="review-cards">
       <?php foreach ( $reviews as $review ) : ?>
         <div class="review-card fade-up">
