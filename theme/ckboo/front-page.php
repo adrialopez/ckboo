@@ -226,28 +226,29 @@ foreach ( $marquee_items as $item ) {
      ====================================================== -->
 <section class="dj-equipment" id="equipo">
   <div class="container">
-    <p class="section-label">Equipo</p>
-    <h2>Equipo técnico</h2>
+    <p class="section-label">Producción</p>
+    <h2>El evento completo</h2>
     <p class="section-intro">
-      El equipo lo personalizo según el tipo de evento: no es lo mismo la megafonía de un brindis que la potencia que pide una pista llena. Si el espacio ya tiene sonido, iluminación o cabina, los aprovecho; si no, los llevo yo, adaptados a lo que pida cada momento — y de ahí sale el presupuesto.
+      Si me contratas solo como DJ, no necesitas nada más. Si quieres subir el nivel, monto la producción entera —sonido, luces y cabina— y transformo el espacio: paredes que vibran, luces que se mueven con la música, una pista que se nota desde la puerta.
     </p>
     <div class="equipment-cards">
       <div class="equipment-card fade-up">
         <svg class="equipment-card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 6a9 9 0 0 1 0 12"/></svg>
         <h3>Sonido</h3>
-        <p>Altavoces y subwoofer dimensionados al aforo, con micrófono inalámbrico para discursos y anuncios. De la conversación de la cena a la pista llena, sin perder claridad.</p>
+        <p>Altavoces y subwoofer con la potencia de un club: graves que se sienten en el pecho, voz clara con micrófono inalámbrico para los discursos.</p>
       </div>
       <div class="equipment-card fade-up">
         <svg class="equipment-card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.4 1 1.2 1 2.3h6c0-1.1.4-1.9 1-2.3A7 7 0 0 0 12 2z"/></svg>
         <h3>Iluminación</h3>
-        <p>Focos y efectos de pista que cambian con el evento: luz cálida para la cena, más color y movimiento cuando se llena la pista.</p>
+        <p>Focos y efectos de pista en movimiento — la sala se llena de luz y color, como un decorado pensado para bailar.</p>
       </div>
       <div class="equipment-card fade-up">
         <svg class="equipment-card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="12" r="2.5"/><line x1="14" y1="8" x2="19" y2="8"/><line x1="14" y1="12" x2="19" y2="12"/><line x1="14" y1="16" x2="19" y2="16"/></svg>
         <h3>Cabina de DJ</h3>
-        <p>Controladora y mesa de mezclas Pioneer DJ / AlphaTheta. En salas y clubs suele haber ya una montada; si no, la llevo yo.</p>
+        <p>Controladora y mesa de mezclas Pioneer DJ / AlphaTheta — el mismo equipo que uso en sala, montado donde haga falta.</p>
       </div>
     </div>
+    <p class="equipment-checklist-lead fade-up">Con la producción completa incluyo:</p>
     <ul class="equipment-checklist fade-up">
       <li>DJ profesional</li>
       <li>Controladora y mesa de mezclas Pioneer DJ / AlphaTheta</li>

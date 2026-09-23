@@ -1114,13 +1114,20 @@ a.link-card:hover { border-color: rgba(225,185,40,0.5); transform: translateY(-2
 .equipment-card h3 { font-size: 1.15rem; color: var(--white); margin-bottom: 0.5rem; }
 .equipment-card p { color: var(--gray); font-size: 0.9rem; line-height: 1.7; }
 
+.equipment-checklist-lead {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  color: var(--gray-light);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .equipment-checklist {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem 1.5rem;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  margin-top: 1rem;
 }
 .equipment-checklist li {
   display: flex;
