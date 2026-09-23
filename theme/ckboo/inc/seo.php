@@ -54,7 +54,7 @@ function ckboo_faqs() {
         ],
         [
             'q' => '¿En qué zonas trabajas?',
-            'a' => 'Mi base es Terrassa, pero me muevo sin problema por Sant Cugat, Barcelona y el resto de Catalunya. Si tu evento cae fuera de esta zona, escríbeme igualmente y lo hablamos.',
+            'a' => 'Mi base es Terrassa, pero me muevo sin problema por Sant Cugat, Barcelona, Sabadell, Rubí, Cerdanyola, Sant Quirze del Vallès y el resto de Catalunya. Si tu evento cae fuera de esta zona, escríbeme igualmente y lo hablamos.',
         ],
         [
             'q' => '¿Para qué tipo de eventos puedes pinchar?',
@@ -94,7 +94,7 @@ function ckboo_faqs() {
         ],
         [
             'q' => '¿Cómo pido presupuesto?',
-            'a' => 'Lo más rápido es el formulario de esta web, o me escribes directamente a ' . CKBOO_EMAIL . '. Cuéntame el tipo de evento, la fecha aproximada y dónde es, y te respondo con disponibilidad y presupuesto.',
+            'a' => 'Lo más rápido es el formulario de esta web, o me escribes directamente a ' . CKBOO_EMAIL . '. Cuéntame el tipo de evento, la fecha aproximada y dónde es, y te respondo en menos de 24h con disponibilidad y presupuesto.',
         ],
         [
             'q' => '¿De qué depende el precio?',
@@ -175,7 +175,7 @@ add_action( 'wp_head', function () {
  * <head>: description, Open Graph, Twitter, JSON-LD
  * ------------------------------------------------------- */
 function ckboo_area_node( $name ) {
-    $cities = [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona' ];
+    $cities = [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Sabadell', 'Rubí', 'Cerdanyola del Vallès', 'Sant Quirze del Vallès' ];
     return [ '@type' => in_array( $name, $cities, true ) ? 'City' : 'AdministrativeArea', 'name' => $name ];
 }
 
@@ -222,7 +222,7 @@ add_action( 'wp_head', function () {
     }
 
     $landings = function_exists( 'ckboo_live_landings' ) ? ckboo_live_landings() : [];
-    $areas    = [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ];
+    $areas    = [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Sabadell', 'Rubí', 'Cerdanyola del Vallès', 'Sant Quirze del Vallès', 'Catalunya' ];
 
     // Offer catalogue: one Service per published service landing.
     $catalog = [];

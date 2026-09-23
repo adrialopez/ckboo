@@ -118,6 +118,14 @@ foreach ( $marquee_items as $item ) {
         <p>En salas y clubs suele haberla. Si no, pongo la mía.</p>
       </div>
     </div>
+    <ul class="equipment-checklist fade-up">
+      <li>DJ profesional</li>
+      <li>Cabina de DJ</li>
+      <li>Equipo de sonido</li>
+      <li>Iluminación</li>
+      <li>Micrófono para anuncios</li>
+      <li>Montaje y desmontaje</li>
+    </ul>
   </div>
 </section>
 

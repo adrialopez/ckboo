@@ -234,11 +234,11 @@ HTML,
             'label'     => 'Zona · Terrassa',
             'seo_title' => 'DJ en Terrassa para eventos y fiestas | DJ CkBoo',
             'seo_desc'  => 'DJ en Terrassa para bodas, fiestas privadas, eventos de empresa y fiestas mayores. +25 años de experiencia. Pide presupuesto a CkBoo.',
-            'areas'     => [ 'Terrassa', 'Vallès Occidental' ],
+            'areas'     => [ 'Terrassa', 'Sabadell', 'Rubí', 'Cerdanyola del Vallès', 'Sant Quirze del Vallès', 'Vallès Occidental' ],
             'excerpt'   => 'Soy CkBoo, DJ con base en Terrassa y más de 25 años poniendo música en eventos privados y corporativos. Adapto cada sesión al espacio, al público y al momento de tu celebración.',
             'content'   => <<<HTML
 <h2>Un DJ en Terrassa para eventos de todo tipo</h2>
-<p>Si buscas un DJ en Terrassa, trabajo desde aquí: mi base está en la ciudad, así que moverme por Terrassa y el resto del Vallès es lo más natural para mí. Pincho en bodas, fiestas privadas, eventos de empresa y fiestas populares, siempre con una sesión pensada para quien va a estar delante.</p>
+<p>Si buscas un DJ en Terrassa, trabajo desde aquí: mi base está en la ciudad, así que moverme por Terrassa y el resto del Vallès es lo más natural para mí. Pincho en bodas, fiestas privadas, eventos de empresa y fiestas populares, siempre con una sesión pensada para quien va a estar delante. También me desplazo con regularidad a Sabadell, Rubí, Cerdanyola del Vallès y Sant Quirze del Vallès.</p>
 
 <h2>Eventos en Terrassa en los que puedo pinchar</h2>
 <ul>
@@ -270,7 +270,7 @@ HTML,
             'label'     => 'Zona · Sant Cugat del Vallès',
             'seo_title' => 'DJ en Sant Cugat para eventos y fiestas | DJ CkBoo',
             'seo_desc'  => 'DJ en Sant Cugat del Vallès para bodas, fiestas privadas, eventos de empresa y fiestas mayores. DJ residente de Txocu. Pide presupuesto a CkBoo.',
-            'areas'     => [ 'Sant Cugat del Vallès', 'Vallès Occidental' ],
+            'areas'     => [ 'Sant Cugat del Vallès', 'Cerdanyola del Vallès', 'Sabadell', 'Vallès Occidental' ],
             'excerpt'   => 'Soy CkBoo, DJ con más de 25 años de experiencia en eventos privados y corporativos. Pincho con regularidad en Sant Cugat: soy el DJ residente para los eventos privados de Txocu.',
             'content'   => <<<HTML
 <h2>Un DJ en Sant Cugat para tus fiestas y eventos</h2>
