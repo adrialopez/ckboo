@@ -131,53 +131,6 @@ foreach ( $marquee_items as $item ) {
 
 
 <!-- ======================================================
-     MIXES — Mixcloud embed
-     ====================================================== -->
-<section class="dj-mixes" id="mixes">
-  <div class="container">
-    <p class="section-label">Música</p>
-    <h2 style="font-size:clamp(2rem,4vw,3rem);">Sets y mixes</h2>
-    <p style="color:var(--gray);margin-top:0.75rem;margin-bottom:1.5rem;max-width:480px;">
-      Grabando, sin nadie delante a quien leer, es donde más experimento: sobre todo house, tech house y latin house, sin setlist ni guion. Lo tienes todo en Mixcloud.
-    </p>
-
-    <div class="dj-genres fade-up" style="margin-bottom:2.5rem;">
-      <?php foreach ( $genres as $genre ) : ?>
-        <span class="genre-tag"><?php echo esc_html( $genre ); ?></span>
-      <?php endforeach; ?>
-    </div>
-
-    <div class="fade-up">
-      <iframe
-        width="100%"
-        height="120"
-        src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=0&feed=%2F<?php echo rawurlencode( $mc_handle ); ?>%2F"
-        frameborder="0"
-        allow="autoplay"
-        loading="lazy"
-        sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
-        title="Sesiones de CkBoo en Mixcloud"
-      ></iframe>
-    </div>
-
-    <div style="text-align:center;margin-top:2.5rem;">
-      <a href="<?php echo esc_url( $mixcloud ); ?>" class="btn-dj" target="_blank" rel="noopener">
-        Escucha más sesiones en Mixcloud
-        <?php echo $arrow; ?>
-      </a>
-    </div>
-
-    <?php $clubs = $landings['dj-clubs-y-salas'] ?? null; ?>
-    <?php if ( $clubs ) : ?>
-      <p class="dj-mixes-club-teaser fade-up">
-        ¿Programas una sala o club? <a href="<?php echo esc_url( $clubs['url'] ); ?>">Más información <?php echo $arrow; ?></a>
-      </p>
-    <?php endif; ?>
-  </div>
-</section>
-
-
-<!-- ======================================================
      BIO
      ====================================================== -->
 <section class="dj-bio" id="bio">
@@ -302,6 +255,53 @@ foreach ( $marquee_items as $item ) {
   </div>
 </section>
 <?php endif; ?>
+
+<!-- ======================================================
+     MIXES — Mixcloud embed
+     ====================================================== -->
+<section class="dj-mixes" id="mixes">
+  <div class="container">
+    <p class="section-label">Música</p>
+    <h2 style="font-size:clamp(2rem,4vw,3rem);">Sets y mixes</h2>
+    <p style="color:var(--gray);margin-top:0.75rem;margin-bottom:1.5rem;max-width:480px;">
+      Grabando, sin nadie delante a quien leer, es donde más experimento: sobre todo house, tech house y latin house, sin setlist ni guion. Lo tienes todo en Mixcloud.
+    </p>
+
+    <div class="dj-genres fade-up" style="margin-bottom:2.5rem;">
+      <?php foreach ( $genres as $genre ) : ?>
+        <span class="genre-tag"><?php echo esc_html( $genre ); ?></span>
+      <?php endforeach; ?>
+    </div>
+
+    <div class="fade-up">
+      <iframe
+        width="100%"
+        height="120"
+        src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=0&feed=%2F<?php echo rawurlencode( $mc_handle ); ?>%2F"
+        frameborder="0"
+        allow="autoplay"
+        loading="lazy"
+        sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+        title="Sesiones de CkBoo en Mixcloud"
+      ></iframe>
+    </div>
+
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="<?php echo esc_url( $mixcloud ); ?>" class="btn-dj" target="_blank" rel="noopener">
+        Escucha más sesiones en Mixcloud
+        <?php echo $arrow; ?>
+      </a>
+    </div>
+
+    <?php $clubs = $landings['dj-clubs-y-salas'] ?? null; ?>
+    <?php if ( $clubs ) : ?>
+      <p class="dj-mixes-club-teaser fade-up">
+        ¿Programas una sala o club? <a href="<?php echo esc_url( $clubs['url'] ); ?>">Más información <?php echo $arrow; ?></a>
+      </p>
+    <?php endif; ?>
+  </div>
+</section>
+
 
 <section class="dj-faq" id="faq">
   <div class="container">
