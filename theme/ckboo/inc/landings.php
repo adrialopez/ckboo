@@ -33,7 +33,7 @@ function ckboo_landings() {
             'seo_title' => 'DJ para bodas en Terrassa, Sant Cugat y Barcelona | CkBoo',
             'seo_desc'  => 'DJ para bodas en Terrassa, Sant Cugat, Barcelona y Catalunya. Música adaptada a cada momento del convite y la fiesta. Pide presupuesto a CkBoo.',
             'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
-            'excerpt'   => 'En una boda pincho de la cena al baile, sin dejar que la energía decaiga. Adapto la sesión a cada momento del convite y a los gustos de los novios y sus invitados — llevo más de 20 años haciendo esto.',
+            'excerpt'   => 'En una boda pincho de la cena al baile, sin dejar que la energía decaiga. Adapto la sesión a cada momento del convite y a los gustos de los novios y sus invitados — llevo más de 25 años haciendo esto.',
             'content'   => <<<HTML
 <h2>Música para cada momento de la boda</h2>
 <p>Una boda no es una única fiesta, son varias seguidas: la recepción, el convite, el baile de los novios y la fiesta que sigue después. Cada momento pide un tipo de música distinto, y preparo la sesión escuchando antes qué imagináis los novios para cada uno de ellos.</p>
@@ -44,8 +44,8 @@ function ckboo_landings() {
 <h2>Todo tipo de música, a vuestro gusto</h2>
 <p>No tengo un estilo fijo ni una década a la que sea fiel, así que antes de la boda hablamos de lo que os gusta, lo que no puede faltar y lo que preferís evitar. Mis sesiones grabadas sí se mueven más por house, tech house y latin house — las tienes en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a> por si quieres hacerte una idea.</p>
 
-<h2>Más de 20 años en celebraciones privadas</h2>
-<p>Llevo más de 20 años poniendo música en celebraciones privadas y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar con públicos muy variados y a que un evento salga bien de principio a fin.</p>
+<h2>Más de 25 años en celebraciones privadas</h2>
+<p>Llevo más de 25 años poniendo música en celebraciones privadas y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>, así que estoy acostumbrado a trabajar con públicos muy variados y a que un evento salga bien de principio a fin.</p>
 
 <h2>Equipo propio</h2>
 <p>Puedes contratarme solo para pinchar, o con el equipo completo. Si el espacio ya tiene cabina, sonido o iluminación, los aprovechamos; si no, los llevo yo. Depende del sitio, y de ahí sale el presupuesto.</p>
@@ -147,7 +147,7 @@ HTML,
             'seo_title' => 'DJ para fiestas mayores en Catalunya | DJ CkBoo',
             'seo_desc'  => 'DJ para fiestas mayores y celebraciones populares en Terrassa, Sant Cugat, Barcelona y toda Catalunya. Música para todas las edades. Pide presupuesto a CkBoo.',
             'areas'     => [ 'Terrassa', 'Sant Cugat del Vallès', 'Barcelona', 'Catalunya' ],
-            'excerpt'   => 'En una fiesta mayor conviven varias generaciones a la vez, y mi sesión tiene que funcionar para todas. La voy ajustando en directo según cómo responda el público, con más de 20 años de experiencia detrás.',
+            'excerpt'   => 'En una fiesta mayor conviven varias generaciones a la vez, y mi sesión tiene que funcionar para todas. La voy ajustando en directo según cómo responda el público, con más de 25 años de experiencia detrás.',
             'content'   => <<<HTML
 <h2>Música para toda la fiesta mayor</h2>
 <p>En una fiesta mayor conviven varias generaciones a la vez, y la sesión tiene que llegar a todas. Preparo una selección con clásicos, hits y música de baile que funcione para todos, y la ajusto en directo según cómo vaya respondiendo el público.</p>
@@ -158,8 +158,8 @@ HTML,
 <h2>Todo tipo de música</h2>
 <p>Aquí menos que en ningún sitio me cierro a un estilo o una década: pincho lo que pida el momento para que la fiesta funcione, sea cual sea el público que tenga delante.</p>
 
-<h2>Más de 20 años de experiencia</h2>
-<p>Llevo más de 20 años poniendo música en celebraciones privadas y populares, y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>.</p>
+<h2>Más de 25 años de experiencia</h2>
+<p>Llevo más de 25 años poniendo música en celebraciones privadas y populares, y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>.</p>
 
 <h2>Equipo propio</h2>
 <p>Si el escenario ya cuenta con sonido, iluminación y cabina, vengo solo a pinchar. Si hay que montarlo desde cero, lo llevo yo, adaptado al aforo. El presupuesto varía según lo que haga falta.</p>
@@ -233,9 +233,9 @@ HTML,
             'title'     => 'DJ en Terrassa para eventos privados y corporativos',
             'label'     => 'Zona · Terrassa',
             'seo_title' => 'DJ en Terrassa para eventos y fiestas | DJ CkBoo',
-            'seo_desc'  => 'DJ en Terrassa para bodas, fiestas privadas, eventos de empresa y fiestas mayores. +20 años de experiencia. Pide presupuesto a CkBoo.',
+            'seo_desc'  => 'DJ en Terrassa para bodas, fiestas privadas, eventos de empresa y fiestas mayores. +25 años de experiencia. Pide presupuesto a CkBoo.',
             'areas'     => [ 'Terrassa', 'Vallès Occidental' ],
-            'excerpt'   => 'Soy CkBoo, DJ con base en Terrassa y más de 20 años poniendo música en eventos privados y corporativos. Adapto cada sesión al espacio, al público y al momento de tu celebración.',
+            'excerpt'   => 'Soy CkBoo, DJ con base en Terrassa y más de 25 años poniendo música en eventos privados y corporativos. Adapto cada sesión al espacio, al público y al momento de tu celebración.',
             'content'   => <<<HTML
 <h2>Un DJ en Terrassa para eventos de todo tipo</h2>
 <p>Si buscas un DJ en Terrassa, trabajo desde aquí: mi base está en la ciudad, así que moverme por Terrassa y el resto del Vallès es lo más natural para mí. Pincho en bodas, fiestas privadas, eventos de empresa y fiestas populares, siempre con una sesión pensada para quien va a estar delante.</p>
@@ -251,8 +251,8 @@ HTML,
 <h2>La música se adapta a tu evento</h2>
 <p>No tengo un repertorio cerrado ni un estilo fijo: construyo la sesión sobre la marcha, según el espacio, la hora y quién esté bailando. Mis sesiones grabadas se mueven más entre house, tech house y latin house, y puedes escucharlas en <a href="{$mix}" target="_blank" rel="noopener">Mixcloud</a>.</p>
 
-<h2>Más de 20 años de experiencia</h2>
-<p>Llevo más de 20 años poniendo música en eventos privados y celebraciones. He puesto música para marcas como Nespresso, Vicio, Cupra y Red Bull y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>.</p>
+<h2>Más de 25 años de experiencia</h2>
+<p>Llevo más de 25 años poniendo música en eventos privados y celebraciones. He puesto música para marcas como Nespresso, Vicio, Cupra y Red Bull y soy el DJ residente para los eventos privados de <a href="https://www.txocu.com/" target="_blank" rel="noopener">Txocu</a>.</p>
 
 <h2>Cómo pedir presupuesto</h2>
 <ol>
@@ -271,7 +271,7 @@ HTML,
             'seo_title' => 'DJ en Sant Cugat para eventos y fiestas | DJ CkBoo',
             'seo_desc'  => 'DJ en Sant Cugat del Vallès para bodas, fiestas privadas, eventos de empresa y fiestas mayores. DJ residente de Txocu. Pide presupuesto a CkBoo.',
             'areas'     => [ 'Sant Cugat del Vallès', 'Vallès Occidental' ],
-            'excerpt'   => 'Soy CkBoo, DJ con más de 20 años de experiencia en eventos privados y corporativos. Pincho con regularidad en Sant Cugat: soy el DJ residente para los eventos privados de Txocu.',
+            'excerpt'   => 'Soy CkBoo, DJ con más de 25 años de experiencia en eventos privados y corporativos. Pincho con regularidad en Sant Cugat: soy el DJ residente para los eventos privados de Txocu.',
             'content'   => <<<HTML
 <h2>Un DJ en Sant Cugat para tus fiestas y eventos</h2>
 <p>Sant Cugat es una de las zonas donde más pincho, y lo hago con una idea clara: adaptar la música al espacio y a la gente. Ya sea una boda, una fiesta privada, un evento de empresa o una celebración con amigos, preparo la sesión para que encaje con el ambiente que quieres crear.</p>
@@ -307,9 +307,9 @@ HTML,
             'seo_title' => 'DJ en Barcelona para eventos y empresas | DJ CkBoo',
             'seo_desc'  => 'DJ en Barcelona para eventos corporativos, bodas y fiestas privadas. He pinchado para Cupra, Nespresso y Red Bull, y en salas como Apolo. Pide presupuesto.',
             'areas'     => [ 'Barcelona', 'Barcelonès' ],
-            'excerpt'   => 'Soy CkBoo, DJ nacido en Barcelona y con más de 20 años de experiencia poniendo música en eventos privados y corporativos. Adapto la sesión al espacio, al público y al momento.',
+            'excerpt'   => 'Soy CkBoo, DJ nacido en Barcelona y con más de 25 años de experiencia poniendo música en eventos privados y corporativos. Adapto la sesión al espacio, al público y al momento.',
             'content'   => <<<HTML
-<h2>Un DJ en Barcelona con más de 20 años de experiencia</h2>
+<h2>Un DJ en Barcelona con más de 25 años de experiencia</h2>
 <p>Nací en Barcelona y crecí entre clubs electrónicos y tiendas de discos, y la música siempre ha sido la constante. Hoy pongo música en eventos privados y corporativos en Barcelona con una idea sencilla: leer la sala y construir la sesión en tiempo real, sin dejar nada a medias.</p>
 
 <h2>Eventos corporativos y de marca en Barcelona</h2>

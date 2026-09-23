@@ -5,7 +5,7 @@
  */
 
 const CKBOO_SEO_TITLE = 'DJ CkBoo | Eventos privados y corporativos en Terrassa';
-const CKBOO_SEO_DESC  = 'CkBoo, DJ en Terrassa, Sant Cugat y Barcelona. +20 años adaptando la música a cada evento privado y corporativo. Escucha mis mixes y contrátame.';
+const CKBOO_SEO_DESC  = 'CkBoo, DJ en Terrassa, Sant Cugat y Barcelona. +25 años adaptando la música a cada evento privado y corporativo. Escucha mis mixes y contrátame.';
 
 const CKBOO_MIXCLOUD_URL  = 'https://www.mixcloud.com/ckboo/';
 const CKBOO_INSTAGRAM_URL = 'https://www.instagram.com/dj_ckboo/';
@@ -50,7 +50,7 @@ function ckboo_faqs() {
     return [
         [
             'q' => '¿Quién es DJ CkBoo?',
-            'a' => 'Es mi nombre artístico. Me llamo Adrià López, vivo en Terrassa y llevo más de 20 años poniendo música en eventos privados y corporativos. Soy el DJ residente de Txocu y he pinchado en eventos de marcas como Nespresso, Vicio, Cupra o Red Bull.',
+            'a' => 'Es mi nombre artístico. Me llamo Adrià López, vivo en Terrassa y llevo más de 25 años poniendo música en eventos privados y corporativos. Soy el DJ residente de Txocu y he pinchado en eventos de marcas como Nespresso, Vicio, Cupra o Red Bull.',
         ],
         [
             'q' => '¿En qué zonas trabajas?',
@@ -256,7 +256,7 @@ add_action( 'wp_head', function () {
             '@id'           => $home . '#dj',
             'name'          => 'CkBoo',
             'alternateName' => 'Adrià López',
-            'description'   => 'DJ con base en Terrassa y más de 20 años de experiencia en eventos privados y corporativos. DJ residente para los eventos privados de Txocu.',
+            'description'   => 'DJ con base en Terrassa y más de 25 años de experiencia en eventos privados y corporativos. DJ residente para los eventos privados de Txocu.',
             'url'           => $home,
             'image'         => $og['url'],
             'jobTitle'      => 'DJ',
@@ -425,7 +425,7 @@ add_action( 'template_redirect', function () {
     $landings = function_exists( 'ckboo_live_landings' ) ? ckboo_live_landings() : [];
 
     $out  = "# DJ CkBoo\n\n";
-    $out .= "> CkBoo (Adrià López) es un DJ con base en Terrassa y más de 20 años de experiencia en eventos privados y corporativos en Terrassa, Sant Cugat del Vallès, Barcelona y el resto de Catalunya. Pincha todo tipo de música adaptada al espacio, al público y al momento. Es DJ residente para los eventos privados de Txocu y ha puesto música para Nespresso, Vicio, Cupra y Red Bull.\n\n";
+    $out .= "> CkBoo (Adrià López) es un DJ con base en Terrassa y más de 25 años de experiencia en eventos privados y corporativos en Terrassa, Sant Cugat del Vallès, Barcelona y el resto de Catalunya. Pincha todo tipo de música adaptada al espacio, al público y al momento. Es DJ residente para los eventos privados de Txocu y ha puesto música para Nespresso, Vicio, Cupra y Red Bull.\n\n";
 
     $out .= "## Servicios\n";
     foreach ( $landings as $l ) {
@@ -455,7 +455,7 @@ add_action( 'template_redirect', function () {
     $out .= "\n## Datos clave\n";
     $out .= "- Nombre artístico: CkBoo (DJ CkBoo). Nombre real: Adrià López.\n";
     $out .= "- Base: Terrassa (Barcelona, Catalunya). Zonas de trabajo: Terrassa, Sant Cugat del Vallès, Barcelona y el resto de Catalunya.\n";
-    $out .= "- Experiencia: más de 20 años poniendo música en eventos privados y corporativos.\n";
+    $out .= "- Experiencia: más de 25 años poniendo música en eventos privados y corporativos.\n";
     $out .= "- Eventos: corporativos, tardeos, fiestas mayores, puestas de largo y fiestas privadas.\n";
     $out .= "- Música: todo tipo, adaptada al evento. Sesiones grabadas de house, tech house y latin house.\n";
     $out .= "- Residencia: DJ residente para los eventos privados de Txocu (https://www.txocu.com/).\n";

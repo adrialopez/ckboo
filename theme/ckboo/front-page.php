@@ -78,7 +78,7 @@ foreach ( $marquee_items as $item ) {
     <p class="section-label">Servicios</p>
     <h2>DJ para cada tipo de evento</h2>
     <p class="section-intro">
-      Soy CkBoo (Adrià López), DJ desde hace más de 20 años. Trabajo sobre todo en Terrassa, Sant Cugat, Barcelona y el resto de Catalunya, y cada sesión la monto distinta según el espacio, quién vaya a estar y qué tipo de evento sea.
+      Soy CkBoo (Adrià López), DJ desde hace más de 25 años. Trabajo sobre todo en Terrassa, Sant Cugat, Barcelona y el resto de Catalunya, y cada sesión la monto distinta según el espacio, quién vaya a estar y qué tipo de evento sea.
     </p>
     <div class="service-cards">
       <?php foreach ( $landings as $slug => $l ) : if ( 'servicio' !== $l['group'] ) { continue; } ?>
@@ -206,7 +206,7 @@ foreach ( $marquee_items as $item ) {
         <p class="section-label">Sobre CkBoo</p>
         <h2>Detrás de los <em>platos</em>.</h2>
 
-        <p class="fade-up">Llevo más de 20 años poniendo música en fiestas y eventos. Nací en Barcelona y crecí entre clubs y tiendas de discos — la música ha sido lo único que no ha cambiado desde entonces.</p>
+        <p class="fade-up">Llevo más de 25 años poniendo música en fiestas y eventos. Nací en Barcelona y crecí entre clubs y tiendas de discos — la música ha sido lo único que no ha cambiado desde entonces.</p>
         <p class="fade-up">En los platos mando yo por sensaciones: leo la sala y voy construyendo sobre la marcha, sin dejar nada a medias. Da igual si es una fiesta privada, un evento de empresa o una noche de club — me adapto al momento.</p>
         <p class="fade-up">En directo no me caso ni con un estilo ni con una década: pincho lo que haga falta para llenar la pista. En cualquier tipo de celebración —bodas, eventos corporativos, fiestas privadas o fiestas mayores— construyo la sesión sobre la marcha según quién esté delante, mezclando lo que sea necesario para que la gente no pare de bailar.</p>
         <p class="fade-up" style="display:flex;align-items:center;gap:0.75rem;">
@@ -249,7 +249,7 @@ foreach ( $marquee_items as $item ) {
       <span class="dj-stats-dot">·</span>
       <span><strong>5,0</strong> ★ en Google</span>
       <span class="dj-stats-dot">·</span>
-      <span><strong>+20</strong> años de experiencia</span>
+      <span><strong>+25</strong> años de experiencia</span>
     </div>
     <div class="review-cards">
       <?php foreach ( $reviews as $review ) : ?>
