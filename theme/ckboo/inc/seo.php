@@ -38,6 +38,11 @@ function ckboo_reviews() {
             'rating' => 5,
             'text'   => 'Un profesional. Se adaptó perfectamente a la gente en todo momento, disfrutamos desde los más pequeños a los más mayores. Brutal.',
         ],
+        [
+            'name'   => 'Sandra',
+            'rating' => 5,
+            'text'   => 'Mejor DJ ever. Sabía en todo momento qué música poner para montar un fiestón.',
+        ],
     ];
 }
 
