@@ -233,21 +233,24 @@ foreach ( $marquee_items as $item ) {
     </p>
     <div class="equipment-cards">
       <div class="equipment-card fade-up">
+        <svg class="equipment-card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 6a9 9 0 0 1 0 12"/></svg>
         <h3>Sonido</h3>
-        <p>Claro para discursos y brindis, con la potencia que hace falta cuando se llena la pista.</p>
+        <p>Nítido en los discursos y brindis, con toda la potencia cuando se llena la pista.</p>
       </div>
       <div class="equipment-card fade-up">
+        <svg class="equipment-card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.4 1 1.2 1 2.3h6c0-1.1.4-1.9 1-2.3A7 7 0 0 0 12 2z"/></svg>
         <h3>Iluminación</h3>
-        <p>Ambiente suave para la cena, efectos de fiesta cuando toca bailar.</p>
+        <p>Ambiente cálido en la cena, luces y efectos cuando se abre la pista.</p>
       </div>
       <div class="equipment-card fade-up">
+        <svg class="equipment-card-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="12" r="2.5"/><line x1="14" y1="8" x2="19" y2="8"/><line x1="14" y1="12" x2="19" y2="12"/><line x1="14" y1="16" x2="19" y2="16"/></svg>
         <h3>Cabina de DJ</h3>
-        <p>En salas y clubs suele haberla. Si no, pongo la mía.</p>
+        <p>Trabajo con equipo Pioneer DJ / AlphaTheta. En salas y clubs suele haberla; si no, pongo la mía.</p>
       </div>
     </div>
     <ul class="equipment-checklist fade-up">
       <li>DJ profesional</li>
-      <li>Cabina de DJ</li>
+      <li>Cabina Pioneer DJ / AlphaTheta</li>
       <li>Equipo de sonido</li>
       <li>Iluminación</li>
       <li>Micrófono para anuncios</li>

@@ -1110,6 +1110,7 @@ a.link-card:hover { border-color: rgba(225,185,40,0.5); transform: translateY(-2
   border: 1px solid rgba(255,255,255,0.06);
   border-radius: 6px;
 }
+.equipment-card-icon { color: var(--yellow); margin-bottom: 1rem; }
 .equipment-card h3 { font-size: 1.15rem; color: var(--white); margin-bottom: 0.5rem; }
 .equipment-card p { color: var(--gray); font-size: 0.9rem; line-height: 1.7; }
 
