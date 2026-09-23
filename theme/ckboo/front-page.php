@@ -37,7 +37,7 @@ $ig_icon = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="
   </h1>
 
   <p class="dj-hero-sub">
-    Pincho en bodas, eventos de empresa y fiestas privadas, leyendo la pista para adaptar la música a cada momento.
+    Me cuentas tu evento, leo la pista y hago que la gente no pare de bailar. Bodas, empresas, fiestas privadas.
   </p>
 
   <div class="dj-hero-cta">
@@ -78,7 +78,7 @@ foreach ( $marquee_items as $item ) {
     <p class="section-label">Servicios</p>
     <h2>DJ para cada tipo de evento</h2>
     <p class="section-intro">
-      Soy CkBoo (Adrià López), DJ desde hace más de 25 años. Trabajo sobre todo en Terrassa, Sant Cugat, Barcelona y el resto de Catalunya, y cada sesión la monto distinta según el espacio, quién vaya a estar y qué tipo de evento sea.
+      Soy CkBoo (Adrià López). Más de 25 años montando sesiones en Terrassa, Sant Cugat, Barcelona y el resto de Catalunya — cada una distinta, según el espacio y quién vaya a bailar.
     </p>
     <div class="service-cards">
       <?php foreach ( $landings as $slug => $l ) : if ( 'servicio' !== $l['group'] ) { continue; } ?>

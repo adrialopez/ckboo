@@ -14,7 +14,7 @@ $arrow   = '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d=
     <h2 style="margin-top:0.5rem;">¿Buscas un DJ para tu evento?</h2>
     <p class="dj-booking-badge fade-up">Respuesta en menos de 24h</p>
     <p class="fade-up" style="color:var(--gray);margin-top:1rem;margin-bottom:2.5rem;">
-      Bodas, eventos corporativos, fiestas privadas y fiestas mayores en Terrassa, Sant Cugat, Barcelona y el resto de Catalunya. Adapto la música al espacio y la audiencia de cada evento. Cuéntame los detalles y te respondo con disponibilidad y presupuesto.
+      Bodas, eventos de empresa, fiestas privadas y fiestas mayores en Terrassa, Sant Cugat, Barcelona y el resto de Catalunya. Cuéntame los detalles de tu evento y hablamos de música, presupuesto y fecha.
     </p>
     <div class="dj-booking-form" style="text-align:left;">
       <?php if ( $form_id && shortcode_exists( 'contact-form-7' ) ) : ?>
